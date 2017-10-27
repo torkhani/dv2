@@ -6,7 +6,12 @@ html {
 }
 
 body {
-	background-color:#eceff1
+	background-color:#eceff1;
+	color: #00234b;
+}
+
+.main-navbar {
+	padding: 10px 0;
 }
 
 .side-nav {
@@ -227,4 +232,99 @@ body {
 
 .side-nav .collapsible-body {
   padding: 0;
+}
+
+
+
+.btn-trans {
+    border: 1px solid #00234b;
+}
+
+
+.search input {
+    outline: 0;
+    border: 1px;
+    width: 100%;
+    height: 54px;
+    padding-left: 14px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #435f71;
+    margin-bottom: 0;
+}
+
+.search button {
+	height: 3rem;
+	width: 100%;
+}
+
+
+.search .select-wrapper input.select-dropdown, .search input {
+	padding: 0 0.70em !important;
+}
+
+
+.search-list {
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.search-list .item {
+  background-color: #fff;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.search-list .item.avatar {
+  min-height: 120px;
+  padding-left: 140px;
+  position: relative;
+}
+
+.search-list .item.avatar:not(.circle-clipper) > .circle,
+.collection .item.avatar :not(.circle-clipper) > .circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search-list .item.avatar i.circle {
+  font-size: 18px;
+  line-height: 42px;
+  color: #fff;
+  background-color: #999;
+  text-align: center;
+}
+
+.search-list .item.avatar .title {
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+.search-list .item.avatar p {
+  margin: 0;
+}
+
+.search-list .item.avatar .secondary-content {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.search-list .item:last-child {
+  border-bottom: none;
+}
+
+.search-list .item.active {
+  background-color: #26a69a;
+  color: #eafaf9;
 }
