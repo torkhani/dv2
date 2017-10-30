@@ -14,6 +14,10 @@ body {
 	padding: 10px 0;
 }
 
+.search-form {
+	z-index: 9;
+}
+
 .side-nav {
   position: fixed;
   width: 300px;
@@ -234,14 +238,15 @@ body {
   padding: 0;
 }
 
-
+.hp-find-a-doctor {
+   padding: 85px 0 65px 0;
+}
 
 .btn-trans {
     border: 1px solid #00234b;
 }
 
-
-.search input {
+.search-form input {
     outline: 0;
     border: 1px;
     width: 100%;
@@ -253,16 +258,18 @@ body {
     margin-bottom: 0;
 }
 
-.search button {
+.search-form button {
 	height: 3rem;
 	width: 100%;
 }
 
-
-.search .select-wrapper input.select-dropdown, .search input {
+.search-form .select-wrapper input.select-dropdown, .search-form input {
 	padding: 0 0.70em !important;
 }
 
+.search-result {
+	background-color: #e7e7e7;
+}
 
 .search-list {
   margin: 0.5rem 0 1rem 0;
@@ -275,26 +282,26 @@ body {
 .search-list .item {
   background-color: #fff;
   line-height: 1.5rem;
-  padding: 10px 20px;
+  padding: 10px 10px;
   margin: 0;
   border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 5px;
+  box-sizing: border-box;
 }
 
 .search-list .item.avatar {
   min-height: 120px;
-  padding-left: 140px;
-  position: relative;
 }
 
-.search-list .item.avatar:not(.circle-clipper) > .circle,
-.collection .item.avatar :not(.circle-clipper) > .circle {
-  position: absolute;
-  width: 100px;
-  height: 100px;
+.search-list .item.avatar .circle {
+  width: 90px;
+  height: 90px;
   overflow: hidden;
-  left: 15px;
   display: inline-block;
   vertical-align: middle;
+  float: left;
+  margin-bottom: 50px;
+  margin-right:20px;
 }
 
 .search-list .item.avatar i.circle {
@@ -307,7 +314,17 @@ body {
 
 .search-list .item.avatar .title {
   font-size: 16px;
+  margin-top: 2px;
+  margin-bottom:2px;
+}
+
+.search-list .item.avatar .subtitle {
+  font-size: 12px;
   margin-top: 0px;
+}
+
+.search-list .item.avatar .rating-comment {
+  margin: 10px 0;
 }
 
 .search-list .item.avatar p {
@@ -325,6 +342,56 @@ body {
 }
 
 .search-list .item.active {
-  background-color: #26a69a;
+  border-bottom: 4px solid #26a69a;
   color: #eafaf9;
+}
+
+.search-list .item.sponsored {
+  border-bottom: 4px solid #fff04b;
+}
+
+.search-map {
+	width:100%;
+	position: relative;
+}
+
+.stuck-map {
+	position: fixed !important;
+	top: 80px;
+}
+
+#map {
+    height: 100%;
+	width: 100%;
+	border: 1px solid #e1e1e4;
+    box-sizing: border-box;
+	min-height: 600px;
+}
+
+
+.link-name {
+    border-bottom: 2px solid #00234b;
+	color: #00234b;
+    padding-bottom: 9px;
+	font-size: 22px;
+}
+
+.link-section a {
+    color: #2bbfed;
+}
+
+.help-container p {
+	padding: 30px 0;
+	font-size: 24px;
+	margin: 0px;
+}
+
+
+footer a {
+    color: #fff04b;
+}
+
+footer  h3, footer  li {
+    padding-top: 4px;
+    padding-bottom: 8px;
 }
