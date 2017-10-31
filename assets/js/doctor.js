@@ -54,12 +54,15 @@
 	  
 	$(window).scroll(function() {    
 		var scroll = $(window).scrollTop();
-		if (scroll >= 66) {
-			$(".search-form").addClass("stuck");
-			$(".search-map").addClass("stuck-map");
-			$(".search-map").width($('.search-map-wrapper').width());
-		} else {
-			$(".search-form").removeClass("stuck");
-			$(".search-map").removeClass("stuck-map");
-		}
+        var resultHeight = ($('.search-list').height() / 2);
+
+        if (scroll >= 66 && scroll < resultHeight) {
+            $(".search-form").addClass("stuck");
+            $(".search-map-wrapper .search-map").addClass("stuck-map");
+            $(".search-map-wrapper .search-map").width($('.search-map-wrapper').width());
+        } else {
+
+            $(".search-map-wrapper .search-map").css('top', -scroll + "px");
+            $(".search-form").removeClass("stuck");
+        }
 	}); //missing );
