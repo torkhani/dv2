@@ -246,6 +246,10 @@ body {
     border: 1px solid #00234b;
 }
 
+.section {
+	padding: 60px 0 80px;
+}
+
 .search-form input {
     outline: 0;
     border: 1px;
@@ -368,7 +372,6 @@ body {
 	min-height: 600px;
 }
 
-
 .link-name {
     border-bottom: 2px solid #00234b;
 	   color: #00234b;
@@ -376,8 +379,11 @@ body {
 	font-size: 22px;
 }
 
-.link-section a {
+.link-section li > a {
     color: #2bbfed;
+	margin-bottom: 10px;
+	line-height: 20px;
+	display: inline-block;
 }
 
 .help-container p {
@@ -386,6 +392,10 @@ body {
 	margin: 0px;
 }
 
+footer {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
 
 footer a {
     color: #fff04b;
@@ -394,4 +404,10 @@ footer a {
 footer  h3, footer  li {
     padding-top: 4px;
     padding-bottom: 8px;
+}
+
+footer .social-network-links {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
