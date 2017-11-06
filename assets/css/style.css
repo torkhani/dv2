@@ -100,6 +100,10 @@ h6 {
   color: #eceff1 !important;
 }
 
+.grey-light {
+  background-color: #f3f3f4 !important;
+}
+
 .yellow {
   background-color: #fff04b !important;
 }
@@ -116,8 +120,8 @@ h6 {
     color: #28d7fa !important;
 }
 
-.blue-lighten {
-    background-color: #2bbfed !important;
+.blue-light {
+    background-color: #80d8ff  !important;
 }
 
 .blue-lighten-text {
@@ -126,6 +130,14 @@ h6 {
 
 .purple {
   background-color: #00234b !important;
+}
+
+.green {
+	background-color: #00c853 !important;
+}
+
+.green-light {
+	background-color: #00e676  !important;
 }
 
 .purple-text {
@@ -210,12 +222,17 @@ input[type=range] + .thumb {
 }
 
 .no-marign {
-  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .no-mb {
   margin-bottom: 0 !important;
 }
+
+.no-mt {
+  margin-top: 0 !important;
+}
+
 .light {
   font-weight: 300;
 }
