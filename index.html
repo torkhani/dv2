@@ -1,174 +1,231 @@
 <!doctype HTML>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<meta content="width=device-width" name="viewport">
-		<meta name="description" content="">
-		<title>Trouver un médecin</title>
- 		<link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
- 		<link type="text/css" rel="stylesheet" href="assets/css/grid.css"/>
- 		<link type="text/css" rel="stylesheet" href="assets/css/normalize.css"/>
- 		<link type="text/css" rel="stylesheet" href="assets/css/custom.css"/>
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width" name="viewport">
+	<meta name="description" content="">
+	<title>Trouver un médecin</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+	<link type="text/css" rel="stylesheet" href="assets/css/grid.css"/>
+	<link type="text/css" rel="stylesheet" href="assets/css/normalize.css"/>
+	<link type="text/css" rel="stylesheet" href="assets/css/custom.css"/>
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-5BC3GFJ');</script>
-		<!-- End Google Tag Manager -->
-	</head>
-	<body>
-		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BC3GFJ"
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5BC3GFJ');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BC3GFJ"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		<header class="grey">
-		<nav class="navbar">
-		    <div class="container">
-		    	<div class="hide-on-med-and-down show-on-medium-and-up main-navbar">
-			        <a href="/" class="brand-logo" rel="nofollow">
-			            <img src="./assets/img/logo.png" alt="Doctoubib">
-			        </a>
+		<header class="grey-light">
+			<nav class="navbar">
+				<div class="container">
+					<div class="hide-on-med-and-down show-on-medium-and-up main-navbar">
+						<a href="/" class="brand-logo" rel="nofollow">
+							<img src="./assets/img/logo.png" alt="Doctoubib">
+						</a>
 
-			        <div class="right">
-			            <a class="transparent btn btn-trans" href="/doctors-section">Vous êtes praticien ?</a>
-			            <a class="transparent btn btn-trans">Mon compte</a>
-			        </div>
-		        </div>
-		        <div class="show-on-mdeium hide-on-med-and-up">
-		        	<a href="/" class="center-block" rel="nofollow">
-			            <img src="./assets/img/logo.png" alt="Doctoubib">
-			        </a>
-					<ul id="mobile-menu" class="side-nav left">
-					    <li>
-					    	<a href="#!">First Link With Icon</a>
-					    </li>
-					    <li>
-					    	<a href="#!">Second Link</a>
-					    </li>
-					    <li>
-					    	<a class="subheader">Subheader</a>
-					    </li>
-					    <li>
-					    	<a class="waves-effect" href="#!">Third Link With Waves</a>
-					    </li>
-					</ul>
-			       	<a href="#" data-activates="mobile-menu" class="button-collapse left">Menu</a>
-			       	<a href="#" data-activates="mobile-menu" class="button-collapse right">Login</a>
-		       	</div>
-		    </div>
-		</nav>
+						<div class="right">
+							<a class="transparent btn btn-trans" href="/doctors-section">Vous êtes praticien ?</a>
+							<a class="transparent btn btn-trans">Mon compte</a>
+						</div>
+					</div>
+					<div class="show-on-mdeium hide-on-med-and-up">
+						<a href="/" class="center-block" rel="nofollow">
+							<img src="./assets/img/logo.png" alt="Doctoubib">
+						</a>
+						<ul id="mobile-menu" class="side-nav left">
+							<li>
+								<a href="#!">First Link With Icon</a>
+							</li>
+							<li>
+								<a href="#!">Second Link</a>
+							</li>
+							<li>
+								<a class="subheader">Subheader</a>
+							</li>
+							<li>
+								<a class="waves-effect" href="#!">Third Link With Waves</a>
+							</li>
+						</ul>
+						<a href="#" data-activates="mobile-menu" class="button-collapse left">Menu</a>
+						<a href="#" data-activates="mobile-menu" class="button-collapse right">Login</a>
+					</div>
+				</div>
+			</nav>
 		</header>
 		<main>
-			<section class="grey hp-find-a-doctor">
+			<section class="grey-light hp-find-a-doctor">
 				<div class="container">
 					<h1 class="center">Feeling meh? Find a doctor.</h1>
-			        <div class="search-form row">
-			        	<form action="result.html">
+					<div class="search-form row no-mb">
+						<form action="result.html">
 							<div class="input-field col m4 s12">
-			        			<input type="text" name="" placeholder="Médecin, etablissement,...">
-			        		</div>
-							<div class="input-field col m3 s12">
-							    <select>
-							      <option value="" disabled selected>Spécialité</option>
-							      <option value="1">Cardiologue</option>
-							      <option value="2">Gynécologue</option>
-							      <option value="3">Dermatlogue</option>
-							   	  <option value="1">Cardiologue</option>
-							      <option value="2">Gynécologue</option>
-							      <option value="3">Dermatlogue</option>
-							    </select>
+								<input type="text" name="" placeholder="Médecin, etablissement,...">
 							</div>
 							<div class="input-field col m3 s12">
-							    <select>
-							      <option value="" disabled selected>Où ?</option>
-							      <option value="1">Tunis</option>
-							      <option value="2">Ariana</option>
-							      <option value="3">Manouba</option>
-							   	  <option value="1">Ben Arous</option>
-							      <option value="2">Jendouba</option>
-							      <option value="3">Sfax</option>
-							    </select>
+								<select>
+									<option value="" disabled selected>Spécialité</option>
+									<option value="1">Cardiologue</option>
+									<option value="2">Gynécologue</option>
+									<option value="3">Dermatlogue</option>
+									<option value="1">Cardiologue</option>
+									<option value="2">Gynécologue</option>
+									<option value="3">Dermatlogue</option>
+								</select>
 							</div>
-			        		<div class="input-field col m2 s12">
-			        			<button type="submit" class="btn purple white-text">Rec</button>
-			        		</div>
-			        	</form>
-		        	</div>
-	        	</div>
+							<div class="input-field col m3 s12">
+								<select>
+									<option value="" disabled selected>Où ?</option>
+									<option value="1">Tunis</option>
+									<option value="2">Ariana</option>
+									<option value="3">Manouba</option>
+									<option value="1">Ben Arous</option>
+									<option value="2">Jendouba</option>
+									<option value="3">Sfax</option>
+								</select>
+							</div>
+							<div class="input-field col m2 s12">
+								<button type="submit" class="btn purple white-text">Rec</button>
+							</div>
+						</form>
+					</div>
+				</div>
 			</section>
-			<section class="grey hide-on-small-only">
+			<section class="section blue-light hide-on-small-only">
 				<div class="container">
-					<div class="row valign-wrapper">
+					<div class="row valign-wrapper no-mb">
 						<div class="col m6">
 							<div class="infos">
-								<h2>Votre santé à portée de main</h2>
+								<h2 class="no-mt">Votre santé à portée de main</h2>
 								<ul>
 									<li>Trouver des médecins à proximité dans votre ville</li>
 									<li>Prenez rendez-vous en ligne gratuitement</li>
 									<li>Parcourir les vrais avis des patients</li>
 									<li>Accédez à votre espace patient.
-								</ul>
-								<h3>Prenez rendez-vous sur l'application gratuitement</h3>
-								<p>Avec l'application Doctoubib, où que vous soyez, prenez rendez-vous en ligne avec votre médecin. Triez par prix, disponibilité, proximité et obtenez une consultation rapidement proche de chez vous.</p>
-								Application disponible sur iOS et Androïd.
-								<div class="store-links">
-									<a href="https://itunes.apple.com/us/app/keldoc/id652086356?mt=8" rel="nofollow" target="_blank">
-									<img alt="keldoc application apple app store" src="https://dm6gzjsvb8nd1.cloudfront.net/assets/front/stores/app-store-de794471f917b1de449a633cbd284a58.png">
-									</a>
-									<a href="https://play.google.com/store/apps/details?id=com.keldoc" rel="nofollow" target="_blank">
-									<img alt="keldoc application google play" src="https://dm6gzjsvb8nd1.cloudfront.net/assets/front/stores/google-play-8003e675b4fed7ba53fc3bef20bdfa88.png">
-									</a>
+									</ul>
+									<h3>Prenez rendez-vous sur l'application gratuitement</h3>
+									<p>Avec l'application Doctoubib, où que vous soyez, prenez rendez-vous en ligne avec votre médecin. Triez par prix, disponibilité, proximité et obtenez une consultation rapidement proche de chez vous.</p>
+									Application disponible sur iOS et Androïd.
+									<div class="store-links">
+										<a href="https://itunes.apple.com/us/app/keldoc/id652086356?mt=8" rel="nofollow" target="_blank">
+											<img alt="Doctoubib application apple app store" src="https://dm6gzjsvb8nd1.cloudfront.net/assets/front/stores/app-store-de794471f917b1de449a633cbd284a58.png">
+										</a>
+										<a href="https://play.google.com/store/apps/details?id=com.keldoc" rel="nofollow" target="_blank">
+											<img alt="Doctoubib application google play" src="https://dm6gzjsvb8nd1.cloudfront.net/assets/front/stores/google-play-8003e675b4fed7ba53fc3bef20bdfa88.png">
+										</a>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col m6">
-							<img src="./assets/img/mobile.png" class="responsive-img" alt="Application mobile doctoubib">
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="purple white-text">
-				<div class="container">
-					<h3>Vous êtes professionnel de santé ?</h3>
-					<div class="row">
-						<div class="col m12">
-							<ul>
-								<li>Attirer et engager de nouveaux patients</li>
-								<li>Construisez et renforcez votre réputation en ligne</li>
-								<li>Offrir une expérience premium aux patients</li>
-							</ul>
+							<div class="col m6">
+								<img src="./assets/img/mobile.png" class="responsive-img right" alt="Application mobile doctoubib">
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="link-section hide-on-small-only">
+				</section>
+				<section class="section purple white-text">
+					<div class="container">
+						<h3 class="no-mt">Vous êtes professionnel de santé ?</h3>
+						<div class="row no-mb">
+							<div class="col m12">
+								<ul>
+									<li>Attirer et engager de nouveaux patients</li>
+									<li>Construisez et renforcez votre réputation en ligne</li>
+									<li>Offrir une expérience premium aux patients</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section link-section white hide-on-small-only">
+					<div class="container">
+						<h3 class="no-mt">Trouver un médecin par...</h3>
+						<div class="row no-mb">
+							<div class="col m4 s12">
+								<a href="#" ><h4 class="link-name"><i class="fa fa-map-signs" aria-hidden="true"></i> Ville</h4></a>
+								<ul>
+									<li><a href="#">Ariana</a></li>
+									<li><a href="#">Ben Arous</a></li>
+									<li><a href="#">Bizete</a></li>
+									<li><a href="#">Beja</a></li>
+									<li><a href="#">Gabes</a></li>
+									<li><a href="#">Sousse</a></li>
+									<li><a href="#">Sfax</a></li>
+									<li><a href="#">Jendouba</a></li>
+									<li><a href="#">Manouba</a></li>
+									<li><a href="#">Monastir</a></li>
+									<li><a href="#">Mehdia</a></li>
+									<li><a href="#">Nabeul</a></li>
+									<li><a href="#">Plus...</a></li>
+								</ul>
+							</div>
+							<div class="col m4 s12">
+								<a href="/morespecialties" >
+									<h4 class="link-name"><i class="fa fa-heartbeat" aria-hidden="true"></i> Spéciality</h4>
+								</a>
+								<ul>
+									<li><a href="#">Cardiologue</a></li>
+									<li><a href="#">Dentiste</a></li>
+									<li><a href="#">Pédiatre</a></li>
+									<li><a href="#">Ophtalmologue</a></li>
+									<li><a href="#">Sexologue</a></li>
+									<li><a href="#">Gynécologue</a></li>
+									<li><a href="#">Dermatologue</a></li>
+									<li><a href="#">Rhumatologue</a></li>
+									<li><a href="#">Neurologue</a></li>
+									<li><a href="#">Chirurgien orthopédiste</a></li>
+									<li><a href="#">Psychiatre</a></li>
+									<li><a href="#">Plus...</a></li>
+								</ul>
+							</div>
+							<div class="col m4 s12">
+								<a href="#" >
+									<h4 class="link-name"><i class="fa fa-hospital-o" aria-hidden="true"></i> Structures de santé en tunisie</h4>
+								</a>
+								<ul>
+									<li><a href="#">Etablissements publics de santé</a></li>
+									<li><a href="#">Hôpitaux régionaux</a></li>
+									<li><a href="#">Hôpitaux de circonscription</a></li>
+									<li><a href="#">Centres de santé de base</a></li>
+									<li><a href="#">Structures relevant du ministère de l'intérieur</a></li>
+									<li><a href="#">Centres médicaux d'entreprises</a></li>
+									<li><a href="#">Policliniques CSS</a></li>
+									<li><a href="#">Cliniques</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="yellow">
+					<div class="container help-container">
+						<p class="purple-text">
+							<i class="fa fa-hand-stop-o" aria-hidden="true"></i> Besoin d'aide ? <a href="/help">Visitez notre support</a>
+						</p>
+					</div>
+				</section>
+			</main>
+			<footer class="page-footer purple">
 				<div class="container">
-					<h3>Trouver un médecin par...</h3>
 					<div class="row">
-						<div class="col m4 s12">
-							<a href="#" ><h4 class="link-name">Ville</h4></a>
+						<div class="col m2">
+							<h4 class="white-text">Doctoubib</h4>
 							<ul>
-								<li><a href="#">Ariana</a></li>
-								<li><a href="#">Ben Arous</a></li>
-								<li><a href="#">Bizete</a></li>
-								<li><a href="#">Beja</a></li>
-								<li><a href="#">Gabes</a></li>
-								<li><a href="#">Sousse</a></li>
-								<li><a href="#">Sfax</a></li>
-								<li><a href="#">Jendouba</a></li>
-								<li><a href="#">Manouba</a></li>
-								<li><a href="#">Monastir</a></li>
-								<li><a href="#">Mehdia</a></li>
-								<li><a href="#">Nabeul</a></li>
-								<li><a href="#">Plus...</a></li>
+								<li><a target="_blank" href="/doctors-section">Vous êtes praticien ?</a>
+								</li>
+								<li><a href="/concept">Le concept</a></li>
+								<li><a href="/about-us">À propos de nous</a></li>
+								<li><a href="/help">Contact</a></li>
+								<li><a href="/blog">Blog</a></li>
 							</ul>
 						</div>
-						<div class="col m4 s12">
-							<a href="/morespecialties" >
-								<h4 class="link-name">Spéciality</h4>
-							</a>
-
+						<div class="col m2">
+							<h4 class="white-text">Spéciaité</h4>
 							<ul>
 								<li><a href="#">Cardiologue</a></li>
 								<li><a href="#">Dentiste</a></li>
@@ -177,179 +234,114 @@
 								<li><a href="#">Sexologue</a></li>
 								<li><a href="#">Gynécologue</a></li>
 								<li><a href="#">Dermatologue</a></li>
-								<li><a href="#">Rhumatologue</a></li>
-								<li><a href="#">Neurologue</a></li>
-								<li><a href="#">Chirurgien orthopédiste</a></li>
-								<li><a href="#">Psychiatre</a></li>
 								<li><a href="#">Plus...</a></li>
 							</ul>
 						</div>
-						<div class="col m4 s12">
-							<a href="#" >
-								<h4 class="link-name">Structures de santé en tunisie</h4>
-							</a>
+						<div class="col m2">
+							<h4 class="white-text">Ville</h4>
 							<ul>
-								<li><a href="#">Etablissements publics de santé</a></li>
-								<li><a href="#">Hôpitaux régionaux</a></li>
-								<li><a href="#">Hôpitaux de circonscription</a></li>
-								<li><a href="#">Centres de santé de base</a></li>
-								<li><a href="#">Structures relevant du ministère de l'intérieur</a></li>
-								<li><a href="#">Centres médicaux d'entreprises</a></li>
-								<li><a href="#">Policliniques CSS</a></li>
-								<li><a href="#">Cliniques</a></li>
+								<li><a href="#">Ariana</a></li>
+								<li><a href="#">Ben Arous</a></li>
+								<li><a href="#">Beja</a></li>
+								<li><a href="#">Bizerte</a></li>
+								<li><a href="#">Jendouba</a></li>
+								<li><a href="#">Sousse</a></li>
+								<li><a href="#">Sfax</a></li>
+								<li><a href="#">Tunis</a></li>
+								<li><a href="#">Plus...</a></li>
+							</ul>
+						</div>
+						<div class="col m2">
+							<h4 class="white-text">Recherche par</h4>
+							<ul>
+								<li><a href="#">Nom de docteur</a></li>
+								<li><a href="#">Spécialité</a></li>
+								<li><a href="#">Location</a></li>
+								<li><a href="#">Hopital</a></li>
+							</ul>
+						</div>
+						<div class="col m4">
+							<h4 class="white-text">Recherches fréquentes</h4>
+							<ul>
+								<li>
+									<a href="/Chirurgien-dentiste/tunis">Chirurgien-dentiste
+									Tunis</a>
+								</li>
+								<li>
+									<a href="/medecin-generaliste/tunis">Médecin
+									généraliste Tunis</a>
+								</li>
+								<li>
+									<a href="/pediatre/tunis">Pédiatre
+									Tunis</a>
+								</li>
+								<li>
+									<a href="/gynecologue/tunis">Gynécologue
+									Tunis</a>
+								</li>
+								<li>
+									<a href="/gynecologue/sousse">Gynécologue
+									Sousse</a>
+								</li>
+								<li>
+									<a href="/gynecologue/ben-arous">Gynécologue
+									Ben Arous</a>
+								</li>
+								<li>
+									<a href="/ophtalmologue/tunis">Ophtalmologue
+									Tunis</a>
+								</li>
+								<li>
+									<a href="/ophtalmologue/ben-arous">Ophtalmologue
+									Ben Arous</a>
+								</li>
+								<li>
+									<a href="/orl/tunis">ORL
+									Tunis</a>
+								</li>
+								<li>
+									<a href="/dermatologue/tunis">Dermatologue
+									Tunis</a>
+								</li>
+								<li>
+									<a href="/chirurgien-urologue/tunis">Chirurgien
+									urologue Tunis</a>
+								</li>
+								<li>
+									<a href="/cardiologue/tunis">Cardiologue
+									Tunis</a>
+								</li>
+								<li>
+									<a href="/medecin-generaliste/sfax">Médecin
+									généraliste Sfax</a>
+								</li>
 							</ul>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="yellow">
-				<div class="container help-container">
-					<p class="purple-text">
-						Besoin d'aide ? <a href="/help">Visitez notre support</a>
-					</p>
-				</div>
-			</section>
-		</main>
-	<footer class="page-footer purple">
-    <div class="container">
-        <div class="row">
-            <div class="col m2">
-                <h4 class="white-text">Doctoubib</h4>
-                <ul>
-                    <li><a target="_blank" href="/doctors-section">Vous êtes praticien ?</a>
-                    </li>
-                    <li><a href="/concept">Le concept</a></li>
-                    <li><a href="/about-us">À propos de nous</a></li>
-                    <li><a href="/help">Contact</a></li>
-					<li><a href="/blog">Blog</a></li>
-                </ul>
-            </div>
-            <div class="col m2">
-                <h4 class="white-text">Spéciaité</h4>
-					<ul>
-					<li><a href="#">Cardiologue</a></li>
-					<li><a href="#">Dentiste</a></li>
-					<li><a href="#">Pédiatre</a></li>
-					<li><a href="#">Ophtalmologue</a></li>
-					<li><a href="#">Sexologue</a></li>
-					<li><a href="#">Gynécologue</a></li>
-					<li><a href="#">Dermatologue</a></li>
-					<li><a href="#">Plus...</a></li>
-				</ul>
-            </div>
-			<div class="col m2">
-                <h4 class="white-text">Ville</h4>
-					<ul>
-					<li><a href="#">Ariana</a></li>
-					<li><a href="#">Ben Arous</a></li>
-					<li><a href="#">Beja</a></li>
-					<li><a href="#">Bizerte</a></li>
-					<li><a href="#">Jendouba</a></li>
-					<li><a href="#">Sousse</a></li>
-					<li><a href="#">Sfax</a></li>
-					<li><a href="#">Tunis</a></li>
-					<li><a href="#">Plus...</a></li>
-				</ul>
-            </div>
-			<div class="col m2">
-                <h4 class="white-text">Recherche par</h4>
-					<ul>
-					<li><a href="#">Nom de docteur</a></li>
-					<li><a href="#">Spécialité</a></li>
-					<li><a href="#">Location</a></li>
-					<li><a href="#">Hopital</a></li>
-				</ul>
-			</div>
-            <div class="col m4">
-                <h4 class="white-text">Recherches fréquentes</h4>
-                <ul>
-                    <li>
-                        <a href="/Chirurgien-dentiste/tunis">Chirurgien-dentiste
-                            Tunis</a>
-                    </li>
-                    <li>
-                        <a href="/medecin-generaliste/tunis">Médecin
-                            généraliste Tunis</a>
-                    </li>
-                    <li>
-                        <a href="/pediatre/tunis">Pédiatre
-                            Tunis</a>
-                    </li>
-                    <li>
-                        <a href="/gynecologue/tunis">Gynécologue
-                            Tunis</a>
-                    </li>
-                    <li>
-                        <a href="/gynecologue/sousse">Gynécologue
-                            Sousse</a>
-                    </li>
-                    <li>
-                        <a href="/gynecologue/ben-arous">Gynécologue
-                            Ben Arous</a>
-                    </li>
-                    <li>
-                        <a href="/ophtalmologue/tunis">Ophtalmologue
-                            Tunis</a>
-                    </li>
-                    <li>
-                        <a href="/ophtalmologue/ben-arous">Ophtalmologue
-                            Ben Arous</a>
-                    </li>
-                    <li>
-                        <a href="/orl/tunis">ORL
-                            Tunis</a>
-                    </li>
-                    <li>
-                        <a href="/dermatologue/tunis">Dermatologue
-                            Tunis</a>
-                    </li>
-                    <li>
-                        <a href="/chirurgien-urologue/tunis">Chirurgien
-                            urologue Tunis</a>
-                    </li>
-                    <li>
-                        <a href="/cardiologue/tunis">Cardiologue
-                            Tunis</a>
-                    </li>
-                    <li>
-                        <a href="/medecin-generaliste/sfax">Médecin
-                            généraliste Sfax</a>
-                    </li>
-                </ul>
-          
-            </div>
-		</div>
-		
-		    <div class="row">
-	            <div class="col m12">
-	                <div class="center-block">
-	                    <a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur Facebook" href="https://www.facebook.com/Doctoubib-212765005820617">
-	                        <i class="fa fa-facebook"></i>
-	                    </a>
-	                    <a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur Twitter" href="https://twitter.com/DoctoubibSocial">
-	                        <i class="fa fa-twitter"></i>
-	                    </a>
-	                    <a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur LinkedIn" href="https://www.linkedin.com/company/doctoubib">
-	                        <i class="fa fa-linkedin"></i>
-	                    </a>
-	                    <a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur Google Plus" href="https://plus.google.com/108679259695174843129">
-	                        <i class="fa fa-google-plus"></i>
-	                    </a>
-	                </div>
-	            </div>
-	        </div>
-			
-			<div>
-				<strong>Copyright © 2016 Doctoubib</strong>, tous droits réservés.
-				<a class="grey-text" href="/terms-of-use">
-					Conditions générales d'utilisation
-				</a>
-			</div>
-	    </div>
-	</footer>
 
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-		<script type="text/javascript" src="assets/js/main.js"></script>
+					<div class="row no-mb">
+						<div class="col m12 center social-network-links">
+							<a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur Facebook" href="https://www.facebook.com/Doctoubib-212765005820617">
+								<i class="fa fa-facebook"></i>
+							</a>
+							<a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur Twitter" href="https://twitter.com/DoctoubibSocial">
+								<i class="fa fa-twitter"></i>
+							</a>
+							<a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur LinkedIn" href="https://www.linkedin.com/company/doctoubib">
+								<i class="fa fa-linkedin"></i>
+							</a>
+							<a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur Google Plus" href="https://plus.google.com/108679259695174843129">
+								<i class="fa fa-google-plus"></i>
+							</a>						
+						</div>
+						<div class="white-text col m12 center">© 2018 Doctoubib. <a class="grey-text" href="/terms-of-use">Conditions générales d'utilisation</a></div>
+					</div>
+
+				</div>
+		</footer>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 	</body>
 </html>
