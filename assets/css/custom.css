@@ -277,25 +277,29 @@ body {
 
 .search-list {
   margin: 0.5rem 0 1rem 0;
-  border: 1px solid #e0e0e0;
-  border-radius: 2px;
   overflow: hidden;
   position: relative;
+  background: #f6f6f6;
 }
 
 .search-list .item {
   background-color: #fff;
   line-height: 1.5rem;
   padding: 10px 10px;
-  margin: 0;
-  border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 5px;
+  margin: 0 8px 8px 8px;
   box-sizing: border-box;
+  min-height: 200px;
 }
 
-.search-list .item.avatar {
-  min-height: 120px;
+.search-list .item.sponsored {
+  border-bottom: 8px solid #fff04b;
 }
+
+.search-list .item:hover {
+    box-shadow: 4px 8px 12px -6px #e1e1e4, 5px -4px 12px -6px #e1e1e4;
+    transition: box-shadow .2s;
+}
+
 
 .search-list .item.avatar .circle {
   width: 90px;
@@ -335,24 +339,34 @@ body {
   margin: 0;
 }
 
-.search-list .item.avatar .secondary-content {
-  position: absolute;
-  top: 16px;
-  right: 16px;
+.btn-appointment-slot {
+  background-color: #e7e7e7;
+  border: 1px solid #e7e7e7;
+  margin: 2px;
+  color: #00234b;
+  width: 100%;
+  padding: 0 1.2rem;
 }
 
-.search-list .item:last-child {
-  border-bottom: none;
+.btn-appointment-empty-slot {
+    padding: 0 1.2rem;
+    background: transparent;
+    border: none;
+    color: #C3C3C8;
+    display: block;
 }
 
-.search-list .item.active {
-  border-bottom: 4px solid #26a69a;
-  color: #eafaf9;
+.search-list .item:hover .btn-appointment-slot {
+    background-color: #fff04b;
+    border: 1px solid #fff04b;
 }
 
-.search-list .item.sponsored {
-  border-bottom: 4px solid #fff04b;
+.search-list .item:hover .btn-appointment-slot:hover {
+  color: #fff;
+  background-color: #00234b;
+  border: 1px solid #00234b;
 }
+
 
 .search-map-wrapper {
 	width:100%;
