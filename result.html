@@ -1,585 +1,601 @@
 <!doctype HTML>
 <html lang="fr">
-	<head>
-			<meta charset="UTF-8">
-			<meta content="width=device-width" name="viewport">
-			<meta name="description" content="">
-			<title>Trouver un médecin</title>
-			<link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
-			<link type="text/css" rel="stylesheet" href="assets/css/grid.css"/>
-			<link type="text/css" rel="stylesheet" href="assets/css/normalize.css"/>
-			<link type="text/css" rel="stylesheet" href="assets/css/custom.css"/>
-			<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-			<!-- Google Tag Manager -->
-			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-5BC3GFJ');</script>
-		<!-- End Google Tag Manager -->
-	</head>
-	<body>
-		<header class="yellow">
-			<nav class="navbar">
-				<div class="container">
-					<div class="main-navbar">
-						<a href="index.html">
-							<img src="./assets/img/logo.png" alt="Doctoubib">
-						</a>
-						<div class="right">
-							<a class="transparent btn btn-trans purple-text" href="/doctors-section">Vous êtes praticien ?</a>
-							<a class="transparent btn btn-trans purple-text">Mon compte</a>
-						</div>
-					</div>
-					<div class="show-on-mdeium hide-on-med-and-up">
-						<a href="/" class="center-block" rel="nofollow">
-							<img src="./assets/img/logo.png" alt="Doctoubib">
-						</a>
-						<ul id="mobile-menu" class="side-nav left">
-							<li>
-								<a class="subheader">Mon compte</a>
-							</li>
-							<li>
-								<a href="#!">First Link With Icon</a>
-							</li>
-							<li>
-								<a class="subheader">vous etes Médecin ?</a>
-							</li>
-							<li>
-								<a class="waves-effect" href="#!">Rejoignez nous</a>
-							</li>
-							<li>
-								<a class="subheader">A propos de nous</a>
-							</li>
-							<li>
-								<a class="waves-effect" href="#!">Concept</a>
-							</li>
-							<li>
-								<a class="waves-effect" href="#!">Contactez nous</a>
-							</li>
-						</ul>
-						<a href="#" data-activates="mobile-menu" class="button-collapse left">Menu</a>
-						<a href="#" data-activates="mobile-menu" class="button-collapse right">Login</a>
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width" name="viewport">
+	<meta name="description" content="">
+	<title>Trouver un médecin</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+	<link type="text/css" rel="stylesheet" href="assets/css/grid.css"/>
+	<link type="text/css" rel="stylesheet" href="assets/css/normalize.css"/>
+	<link type="text/css" rel="stylesheet" href="assets/css/custom.css"/>
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5BC3GFJ');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<div id="app"></div>
+	<header class="yellow">
+		<nav class="navbar">
+			<div class="container">
+				<div class="main-navbar">
+					<a href="index.html">
+						<img src="./assets/img/logo.png" alt="Doctoubib">
+					</a>
+					<div class="right">
+						<a class="transparent btn btn-trans purple-text" href="/doctors-section">Vous êtes praticien ?</a>
+						<a class="transparent btn btn-trans purple-text">Mon compte</a>
 					</div>
 				</div>
-			</nav>
-		</header>
-		<main>
-			<div class="search-form yellow" id="search-header">
-				<div class="container">
-					<div class="row no-mb">
-						<form>
-							<div class="input-field col m4 s12">
-								<input type="text" name="" placeholder="Médecin, etablissement,...">
+				<div class="show-on-mdeium hide-on-med-and-up">
+					<a href="/" class="center-block" rel="nofollow">
+						<img src="./assets/img/logo.png" alt="Doctoubib">
+					</a>
+					<ul id="mobile-menu" class="side-nav left">
+						<li>
+							<a class="subheader">Mon compte</a>
+						</li>
+						<li>
+							<a href="#!">First Link With Icon</a>
+						</li>
+						<li>
+							<a class="subheader">vous etes Médecin ?</a>
+						</li>
+						<li>
+							<a class="waves-effect" href="#!">Rejoignez nous</a>
+						</li>
+						<li>
+							<a class="subheader">A propos de nous</a>
+						</li>
+						<li>
+							<a class="waves-effect" href="#!">Concept</a>
+						</li>
+						<li>
+							<a class="waves-effect" href="#!">Contactez nous</a>
+						</li>
+					</ul>
+					<a href="#" data-activates="mobile-menu" class="button-collapse left">Menu</a>
+					<a href="#" data-activates="mobile-menu" class="button-collapse right">Login</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="search-form yellow" id="search-header">
+			<div class="container">
+				<div class="row no-mb">
+					<form>
+						<div class="input-field col m4 s12">
+							<input type="text" name="" placeholder="Médecin, etablissement,...">
+						</div>
+						<div class="input-field col m3 s12">
+							<select>
+								<option value="" disabled selected>Spécialité</option>
+								<option value="1">Cardiologue</option>
+								<option value="2">Gynécologue</option>
+								<option value="3">Dermatlogue</option>
+								<option value="1">Cardiologue</option>
+								<option value="2">Gynécologue</option>
+								<option value="3">Dermatlogue</option>
+							</select>
+						</div>
+						<div class="input-field col m3 s12">
+							<select>
+								<option value="" disabled selected>Où ?</option>
+								<option value="1">Tunis</option>
+								<option value="2">Ariana</option>
+								<option value="3">Manouba</option>
+								<option value="1">Ben Arous</option>
+								<option value="2">Jendouba</option>
+								<option value="3">Sfax</option>
+							</select>
+						</div>
+						<div class="input-field col m2 s12">
+							<button type="submit" class="btn purple white-text"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<section class="container">
+			<div class="row">
+				<div class="col m9 s12 search-result">
+					<h1>Cardiologue à Tunis, Tunisie, 1002</h1>
+					<div class="white slot-network">
+						<div class="row no-mb">
+							<ul class="col m5 s12 offset-m7">
+								<li class="col s4 day-column"><div>Mer</div><div>17/11</div></li>
+								<li class="col s4 day-column"><div>Jeu</div><div>18/11</div></li>
+								<li class="col s4 day-column"><div>Ven</div><div>19/11</div></li>	
+							</ul>
+						</div>
+					</div>
+					<ul class="search-list no-mt">
+						<li class="item valign-wrapper avatar sponsored row">
+							<div class="col m7 s12">
+								<img src="./assets/img/avatar.jpg" alt="" class="circle">
+								<span class="yellow">Resultat sponsoré</span>
+								<h3 class="title">
+									<a href="#" itemprop="url">
+										<span itemprop="name">Dr Moetez TORKHANI</span>
+									</a>
+								</h3>
+								<div class="subtitle">Cardiologue</div>
+								<div class="rating-comment">
+									<a href="doctor.html#rating-comment">
+										Meilleur cardiologue
+									</a>
+								</div>
+								<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
 							</div>
-							<div class="input-field col m3 s12">
-								<select>
-									<option value="" disabled selected>Spécialité</option>
-									<option value="1">Cardiologue</option>
-									<option value="2">Gynécologue</option>
-									<option value="3">Dermatlogue</option>
-									<option value="1">Cardiologue</option>
-									<option value="2">Gynécologue</option>
-									<option value="3">Dermatlogue</option>
-								</select>
+							<div class="col m5 s12">
+								<span class="btn btn-appointment-slot">Aucune date disponible.</span>
 							</div>
-							<div class="input-field col m3 s12">
-								<select>
-									<option value="" disabled selected>Où ?</option>
-									<option value="1">Tunis</option>
-									<option value="2">Ariana</option>
-									<option value="3">Manouba</option>
-									<option value="1">Ben Arous</option>
-									<option value="2">Jendouba</option>
-									<option value="3">Sfax</option>
-								</select>
+						</li>
+
+						<li class="item valign-wrapper avatar row">
+							<div class="col m7 s12">
+								<img src="./assets/img/avatar.jpg" alt="" class="circle">
+								<h3 class="title">
+									<a href="#" itemprop="url">
+										<span itemprop="name">Dr Seriya BEN HAMDA</span>
+									</a>
+								</h3>
+								<div class="subtitle">Cardiologue</div>
+								<div class="rating-comment">
+									<a href="doctor.html#rating-comment">
+										"There is nothing better than leaving your doctor's office..."
+									</a>
+								</div>
+								<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
 							</div>
-							<div class="input-field col m2 s12">
-								<button type="submit" class="btn purple white-text">Rec</button>
+							<div class="col m5 s12">
+								<ul>
+									<li class="col s4">
+										<a class="btn btn-appointment-slot">8:30</a>
+										<a class="btn btn-appointment-slot">9:30</a>
+										<a class="btn btn-appointment-slot">10:30</a>	
+									</li>
+									<li class="col s4">
+										<a class="btn btn-appointment-slot">12:30</a>
+										<a class="btn btn-appointment-slot">16:30</a>
+										<a class="btn btn-appointment-slot">17:00</a>
+									</li>
+									<li class="col s4">
+										<a class="btn btn-appointment-slot">17:30</a>
+										<a class="btn btn-appointment-slot">18:30</a>	
+										<span class="btn btn-appointment-empty-slot">-</span>	
+									</li>
+								</ul>
 							</div>
-						</form>
+						</li>
+
+						<li class="item valign-wrapper avatar row">
+							<div class="col m7 s12">
+								<img src="./assets/img/avatar.jpg" alt="" class="circle">
+								<h3 class="title">
+									<a href="#" itemprop="url">
+										<span itemprop="name">Dr Seriya BEN HAMDA</span>
+									</a>
+								</h3>
+								<div class="subtitle">Cardiologue</div>
+								<div class="rating-comment">
+									<a href="doctor.html#rating-comment">
+										"There is nothing better than leaving your doctor's office..."
+									</a>
+								</div>
+								<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
+							</div>
+							<div class="col m5 s12">
+								<span class="btn btn-appointment-slot">Aucune date disponible.</span>
+							</div>
+						</li>
+						<li class="item valign-wrapper avatar row">
+							<div class="col m7 s12">
+								<img src="./assets/img/avatar.jpg" alt="" class="circle">
+								<h3 class="title">
+									<a href="#" itemprop="url">
+										<span itemprop="name">Dr Seriya BEN HAMDA</span>
+									</a>
+								</h3>
+								<div class="subtitle">Cardiologue</div>
+								<div class="rating-comment">
+									<a href="doctor.html#rating-comment">
+										"There is nothing better than leaving your doctor's office..."
+									</a>
+								</div>
+								<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
+							</div>
+							<div class="col m5 s12">
+								<span class="btn btn-appointment-slot">Aucune date disponible.</span>
+							</div>
+						</li>
+						<li class="item valign-wrapper avatar row">
+							<div class="col m7 s12">
+								<img src="./assets/img/avatar.jpg" alt="" class="circle">
+								<h3 class="title">
+									<a href="#" itemprop="url">
+										<span itemprop="name">Dr Seriya BEN HAMDA</span>
+									</a>
+								</h3>
+								<div class="subtitle">Cardiologue</div>
+								<div class="rating-comment">
+									<a href="doctor.html#rating-comment">
+										"There is nothing better than leaving your doctor's office..."
+									</a>
+								</div>
+								<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
+							</div>
+							<div class="col m5 s12">
+								<span class="btn btn-appointment-slot">Aucune date disponible.</span>
+							</div>
+						</li>
+						<li class="item valign-wrapper avatar row">
+							<div class="col m7 s12">
+								<img src="./assets/img/avatar.jpg" alt="" class="circle">
+								<h3 class="title">
+									<a href="#" itemprop="url">
+										<span itemprop="name">Dr Seriya BEN HAMDA</span>
+									</a>
+								</h3>
+								<div class="subtitle">Cardiologue</div>
+								<div class="rating-comment">
+									<a href="doctor.html#rating-comment">
+										"There is nothing better than leaving your doctor's office..."
+									</a>
+								</div>
+								<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
+							</div>
+							<div class="col m5 s12">
+								<span class="btn btn-appointment-slot">Aucune date disponible.</span>
+							</div>
+						</li>
+						<li class="item valign-wrapper avatar row">
+							<div class="col m7 s12">
+								<img src="./assets/img/avatar.jpg" alt="" class="circle">
+								<h3 class="title">
+									<a href="#" itemprop="url">
+										<span itemprop="name">Dr Seriya BEN HAMDA</span>
+									</a>
+								</h3>
+								<div class="subtitle">Cardiologue</div>
+								<div class="rating-comment">
+									<a href="doctor.html#rating-comment">
+										"There is nothing better than leaving your doctor's office..."
+									</a>
+								</div>
+								<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
+							</div>
+							<div class="col m5 s12">
+								<span class="btn btn-appointment-slot">Aucune date disponible.</span>
+							</div>
+						</li>
+						<li class="item valign-wrapper avatar row">
+							<div class="col m7 s12">
+								<img src="./assets/img/avatar.jpg" alt="" class="circle">
+								<h3 class="title">
+									<a href="#" itemprop="url">
+										<span itemprop="name">Dr Seriya BEN HAMDA</span>
+									</a>
+								</h3>
+								<div class="subtitle">Cardiologue</div>
+								<div class="rating-comment">
+									<a href="doctor.html#rating-comment">
+										"There is nothing better than leaving your doctor's office..."
+									</a>
+								</div>
+								<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
+							</div>
+							<div class="col m5 s12">
+								<span class="btn btn-appointment-slot">Aucune date disponible.</span>
+							</div>
+						</li>
+						<li class="item valign-wrapper avatar row">
+							<div class="col m7 s12">
+								<img src="./assets/img/avatar.jpg" alt="" class="circle">
+								<h3 class="title">
+									<a href="#" itemprop="url">
+										<span itemprop="name">Dr Seriya BEN HAMDA</span>
+									</a>
+								</h3>
+								<div class="subtitle">Cardiologue</div>
+								<div class="rating-comment">
+									<a href="doctor.html#rating-comment">
+										"There is nothing better than leaving your doctor's office..."
+									</a>
+								</div>
+								<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
+							</div>
+							<div class="col m5 s12">
+								<span class="btn btn-appointment-slot">Aucune date disponible.</span>
+							</div>
+						</li>
+
+						<li class="item valign-wrapper avatar row">
+							<div class="col m7 s12">
+								<img src="./assets/img/avatar.jpg" alt="" class="circle">
+								<h3 class="title">
+									<a href="#" itemprop="url">
+										<span itemprop="name">Dr Seriya BEN HAMDA</span>
+									</a>
+								</h3>
+								<div class="subtitle">Cardiologue</div>
+								<div class="rating-comment">
+									<a href="doctor.html#rating-comment">
+										"There is nothing better than leaving your doctor's office..."
+									</a>
+								</div>
+								<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
+							</div>
+							<div class="col m5 s12">
+								<span class="btn btn-appointment-slot">Aucune date disponible.</span>
+							</div>
+						</li>
+
+						<li class="item valign-wrapper avatar row">
+							<div class="col m7 s12">
+								<img src="./assets/img/avatar.jpg" alt="" class="circle">
+								<h3 class="title">
+									<a href="#" itemprop="url">
+										<span itemprop="name">Dr Seriya BEN HAMDA</span>
+									</a>
+								</h3>
+								<div class="subtitle">Cardiologue</div>
+								<div class="rating-comment">
+									<a href="doctor.html#rating-comment">
+										"There is nothing better than leaving your doctor's office..."
+									</a>
+								</div>
+								<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
+							</div>
+							<div class="col m5 s12">
+								<span class="btn btn-appointment-slot">Aucune date disponible.</span>
+							</div>
+						</li>
+					</ul>	
+
+					<ul class="pagination">
+						<li class="disabled"><a href="#!"><</a></li>
+						<li class="active"><a href="#!">1</a></li>
+						<li class="waves-effect"><a href="#!">2</a></li>
+						<li class="waves-effect"><a href="#!">3</a></li>
+						<li class="waves-effect"><a href="#!">4</a></li>
+						<li class="waves-effect"><a href="#!">5</a></li>
+						<li class="waves-effect"><a href="#!">></a></li>
+					</ul>
+				</div>
+				<div class="col m3 hide-on-med-and-down" id="sidebar">
+					<div class="search-map-wrapper">
+						<div class="search-map">
+							<div id="map"></div>
+							<p>
+								La cardiologie est la spécialité médicale qui étudie le cœur et ses maladies. Le médecin spécialisé pratiquant la cardiologie s'appelle le cardiologue. Par extension, il s'intéresse également aux problèmes vasculaires. 
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+
+		<section class="link-section">
+			<div class="container">
+				<h3>Trouver un médecin par...</h3>
+				<div class="row">
+					<div class="col m4 s12">
+						<a href="#" ><h4 class="link-name">Ville</h4></a>
+						<ul>
+							<li><a href="#">Ariana</a></li>
+							<li><a href="#">Ben Arous</a></li>
+							<li><a href="#">Bizete</a></li>
+							<li><a href="#">Beja</a></li>
+							<li><a href="#">Gabes</a></li>
+							<li><a href="#">Sousse</a></li>
+							<li><a href="#">Sfax</a></li>
+							<li><a href="#">Jendouba</a></li>
+							<li><a href="#">Manouba</a></li>
+							<li><a href="#">Monastir</a></li>
+							<li><a href="#">Mehdia</a></li>
+							<li><a href="#">Nabeul</a></li>
+							<li><a href="#">Plus...</a></li>
+						</ul>
+					</div>
+					<div class="col m4 s12">
+						<a href="/morespecialties" >
+							<h4 class="link-name">Spéciality</h4>
+						</a>
+
+						<ul>
+							<li><a href="#">Cardiologue</a></li>
+							<li><a href="#">Dentiste</a></li>
+							<li><a href="#">Pédiatre</a></li>
+							<li><a href="#">Ophtalmologue</a></li>
+							<li><a href="#">Sexologue</a></li>
+							<li><a href="#">Gynécologue</a></li>
+							<li><a href="#">Dermatologue</a></li>
+							<li><a href="#">Rhumatologue</a></li>
+							<li><a href="#">Neurologue</a></li>
+							<li><a href="#">Chirurgien orthopédiste</a></li>
+							<li><a href="#">Psychiatre</a></li>
+							<li><a href="#">Plus...</a></li>
+						</ul>
+					</div>
+					<div class="col m4 s12">
+						<a href="#" >
+							<h4 class="link-name">Structures de santé en tunisie</h4>
+						</a>
+						<ul>
+							<li><a href="#">Etablissements publics de santé</a></li>
+							<li><a href="#">Hôpitaux régionaux</a></li>
+							<li><a href="#">Hôpitaux de circonscription</a></li>
+							<li><a href="#">Centres de santé de base</a></li>
+							<li><a href="#">Structures relevant du ministère de l'intérieur</a></li>
+							<li><a href="#">Centres médicaux d'entreprises</a></li>
+							<li><a href="#">Policliniques CSS</a></li>
+							<li><a href="#">Cliniques</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
-			<section class="container">
-				<div class="row">
-					<div class="col m9 s12 search-resut">
-						<h1>Cardiologue à Tunis, Tunisie, 1002</h1>
-						<ul class="search-list">
-							<li class="item valign-wrapper avatar sponsored row">
-								<div class="col m7 s12">
-									<img src="./assets/img/avatar.jpg" alt="" class="circle">
-									<span class="yellow">Resultat sponsoré</span>
-									<h3 class="title">
-										<a href="#" itemprop="url">
-											<span itemprop="name">Dr Moetez TORKHANI</span>
-										</a>
-									</h3>
-									<div class="subtitle">Cardiologue</div>
-									<div class="rating-comment">
-										<a href="doctor.html#rating-comment">
-											Meilleur cardiologue
-										</a>
-									</div>
-									<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
-								</div>
-								<div class="col m5 s12">
-									<span class="btn btn-appointment-slot">Aucune date disponible.</span>
-								</div>
-							</li>
-
-							<li class="item valign-wrapper avatar row">
-								<div class="col m7 s12">
-									<img src="./assets/img/avatar.jpg" alt="" class="circle">
-									<h3 class="title">
-										<a href="#" itemprop="url">
-											<span itemprop="name">Dr Seriya BEN HAMDA</span>
-										</a>
-									</h3>
-									<div class="subtitle">Cardiologue</div>
-									<div class="rating-comment">
-										<a href="doctor.html#rating-comment">
-											"There is nothing better than leaving your doctor's office..."
-										</a>
-									</div>
-									<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
-								</div>
-								<div class="col m5 s12">
-									<div class="row">
-										<div class="col s4"><a class="btn btn-appointment-slot">8:30</a></div>
-										<div class="col s4"><a class="btn btn-appointment-slot">9:30</a></div>
-										<div class="col s4"><a class="btn btn-appointment-slot">10:30</a></div>	
-		
-										<div class="col s4"><a class="btn btn-appointment-slot">12:30</a></div>	
-										<div class="col s4"><a class="btn btn-appointment-slot">16:30</a></div>	
-										<div class="col s4"><a class="btn btn-appointment-slot">17:00</a></div>	
-							
-										<div class="col s4"><a class="btn btn-appointment-slot">17:30</a></div>	
-										<div class="col s4"><a class="btn btn-appointment-slot">18:30</a></div>	
-										<div class="col s4"><span class="btn btn-appointment-empty-slot">-</span></div>	
-									</div>
-								</div>
-							</li>
-
-							<li class="item valign-wrapper avatar row">
-								<div class="col m7 s12">
-									<img src="./assets/img/avatar.jpg" alt="" class="circle">
-									<h3 class="title">
-										<a href="#" itemprop="url">
-											<span itemprop="name">Dr Seriya BEN HAMDA</span>
-										</a>
-									</h3>
-									<div class="subtitle">Cardiologue</div>
-									<div class="rating-comment">
-										<a href="doctor.html#rating-comment">
-											"There is nothing better than leaving your doctor's office..."
-										</a>
-									</div>
-									<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
-								</div>
-								<div class="col m5 s12">
-									<span class="btn btn-appointment-slot">Aucune date disponible.</span>
-								</div>
-							</li>
-							<li class="item valign-wrapper avatar row">
-								<div class="col m7 s12">
-									<img src="./assets/img/avatar.jpg" alt="" class="circle">
-									<h3 class="title">
-										<a href="#" itemprop="url">
-											<span itemprop="name">Dr Seriya BEN HAMDA</span>
-										</a>
-									</h3>
-									<div class="subtitle">Cardiologue</div>
-									<div class="rating-comment">
-										<a href="doctor.html#rating-comment">
-											"There is nothing better than leaving your doctor's office..."
-										</a>
-									</div>
-									<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
-								</div>
-								<div class="col m5 s12">
-									<span class="btn btn-appointment-slot">Aucune date disponible.</span>
-								</div>
-							</li>
-							<li class="item valign-wrapper avatar row">
-								<div class="col m7 s12">
-									<img src="./assets/img/avatar.jpg" alt="" class="circle">
-									<h3 class="title">
-										<a href="#" itemprop="url">
-											<span itemprop="name">Dr Seriya BEN HAMDA</span>
-										</a>
-									</h3>
-									<div class="subtitle">Cardiologue</div>
-									<div class="rating-comment">
-										<a href="doctor.html#rating-comment">
-											"There is nothing better than leaving your doctor's office..."
-										</a>
-									</div>
-									<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
-								</div>
-								<div class="col m5 s12">
-									<span class="btn btn-appointment-slot">Aucune date disponible.</span>
-								</div>
-							</li>
-							<li class="item valign-wrapper avatar row">
-								<div class="col m7 s12">
-									<img src="./assets/img/avatar.jpg" alt="" class="circle">
-									<h3 class="title">
-										<a href="#" itemprop="url">
-											<span itemprop="name">Dr Seriya BEN HAMDA</span>
-										</a>
-									</h3>
-									<div class="subtitle">Cardiologue</div>
-									<div class="rating-comment">
-										<a href="doctor.html#rating-comment">
-											"There is nothing better than leaving your doctor's office..."
-										</a>
-									</div>
-									<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
-								</div>
-								<div class="col m5 s12">
-									<span class="btn btn-appointment-slot">Aucune date disponible.</span>
-								</div>
-							</li>
-							<li class="item valign-wrapper avatar row">
-								<div class="col m7 s12">
-									<img src="./assets/img/avatar.jpg" alt="" class="circle">
-									<h3 class="title">
-										<a href="#" itemprop="url">
-											<span itemprop="name">Dr Seriya BEN HAMDA</span>
-										</a>
-									</h3>
-									<div class="subtitle">Cardiologue</div>
-									<div class="rating-comment">
-										<a href="doctor.html#rating-comment">
-											"There is nothing better than leaving your doctor's office..."
-										</a>
-									</div>
-									<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
-								</div>
-								<div class="col m5 s12">
-									<span class="btn btn-appointment-slot">Aucune date disponible.</span>
-								</div>
-							</li>
-							<li class="item valign-wrapper avatar row">
-								<div class="col m7 s12">
-									<img src="./assets/img/avatar.jpg" alt="" class="circle">
-									<h3 class="title">
-										<a href="#" itemprop="url">
-											<span itemprop="name">Dr Seriya BEN HAMDA</span>
-										</a>
-									</h3>
-									<div class="subtitle">Cardiologue</div>
-									<div class="rating-comment">
-										<a href="doctor.html#rating-comment">
-											"There is nothing better than leaving your doctor's office..."
-										</a>
-									</div>
-									<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
-								</div>
-								<div class="col m5 s12">
-									<span class="btn btn-appointment-slot">Aucune date disponible.</span>
-								</div>
-							</li>
-							<li class="item valign-wrapper avatar row">
-								<div class="col m7 s12">
-									<img src="./assets/img/avatar.jpg" alt="" class="circle">
-									<h3 class="title">
-										<a href="#" itemprop="url">
-											<span itemprop="name">Dr Seriya BEN HAMDA</span>
-										</a>
-									</h3>
-									<div class="subtitle">Cardiologue</div>
-									<div class="rating-comment">
-										<a href="doctor.html#rating-comment">
-											"There is nothing better than leaving your doctor's office..."
-										</a>
-									</div>
-									<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
-								</div>
-								<div class="col m5 s12">
-									<span class="btn btn-appointment-slot">Aucune date disponible.</span>
-								</div>
-							</li>
-
-							<li class="item valign-wrapper avatar row">
-								<div class="col m7 s12">
-									<img src="./assets/img/avatar.jpg" alt="" class="circle">
-									<h3 class="title">
-										<a href="#" itemprop="url">
-											<span itemprop="name">Dr Seriya BEN HAMDA</span>
-										</a>
-									</h3>
-									<div class="subtitle">Cardiologue</div>
-									<div class="rating-comment">
-										<a href="doctor.html#rating-comment">
-											"There is nothing better than leaving your doctor's office..."
-										</a>
-									</div>
-									<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
-								</div>
-								<div class="col m5 s12">
-									<span class="btn btn-appointment-slot">Aucune date disponible.</span>
-								</div>
-							</li>
-
-							<li class="item valign-wrapper avatar row">
-								<div class="col m7 s12">
-									<img src="./assets/img/avatar.jpg" alt="" class="circle">
-									<h3 class="title">
-										<a href="#" itemprop="url">
-											<span itemprop="name">Dr Seriya BEN HAMDA</span>
-										</a>
-									</h3>
-									<div class="subtitle">Cardiologue</div>
-									<div class="rating-comment">
-										<a href="doctor.html#rating-comment">
-											"There is nothing better than leaving your doctor's office..."
-										</a>
-									</div>
-									<p>56 Rue Claude Nicolas Ledoux, Tunis 1002</p>
-								</div>
-								<div class="col m5 s12">
-									<span class="btn btn-appointment-slot">Aucune date disponible.</span>
-								</div>
-							</li>
-						</ul>	
-
-						<ul class="pagination">
-							<li class="disabled"><a href="#!"><</a></li>
-							<li class="active"><a href="#!">1</a></li>
-							<li class="waves-effect"><a href="#!">2</a></li>
-							<li class="waves-effect"><a href="#!">3</a></li>
-							<li class="waves-effect"><a href="#!">4</a></li>
-							<li class="waves-effect"><a href="#!">5</a></li>
-							<li class="waves-effect"><a href="#!">></a></li>
-						</ul>
-					</div>
-					<div class="col m3 hide-on-med-and-down" id="sidebar">
-						<div class="search-map-wrapper">
-							<div class="search-map">
-								<div id="map"></div>
-								<p>
-									La cardiologie est la spécialité médicale qui étudie le cœur et ses maladies. Le médecin spécialisé pratiquant la cardiologie s'appelle le cardiologue. Par extension, il s'intéresse également aux problèmes vasculaires. 
-								</p>
-							</div>
+		</section>
+		<section class="white">
+			<div class="container">
+				<nav class="breadcrumbs">
+					<div class="nav-wrapper">
+						<div class="col s12">
+							<a href="#!" class="breadcrumb blue-lighten-text">Accueil</a>
+							<a href="#!" class="breadcrumb blue-lighten-text">Cardiologue</a>
+							<a href="#!" class="breadcrumb">Tunis</a>
 						</div>
 					</div>
-				</div>	
-			</section>
+				</nav>
+			</div>
+		</section>
+	</main>
 
-			<section class="link-section">
-				<div class="container">
-					<h3>Trouver un médecin par...</h3>
-					<div class="row">
-						<div class="col m4 s12">
-							<a href="#" ><h4 class="link-name">Ville</h4></a>
-							<ul>
-								<li><a href="#">Ariana</a></li>
-								<li><a href="#">Ben Arous</a></li>
-								<li><a href="#">Bizete</a></li>
-								<li><a href="#">Beja</a></li>
-								<li><a href="#">Gabes</a></li>
-								<li><a href="#">Sousse</a></li>
-								<li><a href="#">Sfax</a></li>
-								<li><a href="#">Jendouba</a></li>
-								<li><a href="#">Manouba</a></li>
-								<li><a href="#">Monastir</a></li>
-								<li><a href="#">Mehdia</a></li>
-								<li><a href="#">Nabeul</a></li>
-								<li><a href="#">Plus...</a></li>
-							</ul>
-						</div>
-						<div class="col m4 s12">
-							<a href="/morespecialties" >
-								<h4 class="link-name">Spéciality</h4>
-							</a>
 
-							<ul>
-								<li><a href="#">Cardiologue</a></li>
-								<li><a href="#">Dentiste</a></li>
-								<li><a href="#">Pédiatre</a></li>
-								<li><a href="#">Ophtalmologue</a></li>
-								<li><a href="#">Sexologue</a></li>
-								<li><a href="#">Gynécologue</a></li>
-								<li><a href="#">Dermatologue</a></li>
-								<li><a href="#">Rhumatologue</a></li>
-								<li><a href="#">Neurologue</a></li>
-								<li><a href="#">Chirurgien orthopédiste</a></li>
-								<li><a href="#">Psychiatre</a></li>
-								<li><a href="#">Plus...</a></li>
-							</ul>
-						</div>
-						<div class="col m4 s12">
-							<a href="#" >
-								<h4 class="link-name">Structures de santé en tunisie</h4>
-							</a>
-							<ul>
-								<li><a href="#">Etablissements publics de santé</a></li>
-								<li><a href="#">Hôpitaux régionaux</a></li>
-								<li><a href="#">Hôpitaux de circonscription</a></li>
-								<li><a href="#">Centres de santé de base</a></li>
-								<li><a href="#">Structures relevant du ministère de l'intérieur</a></li>
-								<li><a href="#">Centres médicaux d'entreprises</a></li>
-								<li><a href="#">Policliniques CSS</a></li>
-								<li><a href="#">Cliniques</a></li>
-							</ul>
-						</div>
-					</div>
+	<footer class="page-footer purple">
+		<div class="container">
+			<div class="row">
+				<div class="col m2">
+					<h4 class="white-text">Doctoubib</h4>
+					<ul>
+						<li><a target="_blank" href="/doctors-section">Vous êtes praticien ?</a>
+						</li>
+						<li><a href="/concept">Le concept</a></li>
+						<li><a href="/about-us">À propos de nous</a></li>
+						<li><a href="/help">Contact</a></li>
+						<li><a href="/blog">Blog</a></li>
+					</ul>
 				</div>
-			</section>
-			<section class="white">
-				<div class="container">
-					<nav class="breadcrumbs">
-						<div class="nav-wrapper">
-							<div class="col s12">
-								<a href="#!" class="breadcrumb blue-lighten-text">Accueil</a>
-								<a href="#!" class="breadcrumb blue-lighten-text">Cardiologue</a>
-								<a href="#!" class="breadcrumb">Tunis</a>
-							</div>
-						</div>
-					</nav>
+				<div class="col m2">
+					<h4 class="white-text">Spéciaité</h4>
+					<ul>
+						<li><a href="#">Cardiologue</a></li>
+						<li><a href="#">Dentiste</a></li>
+						<li><a href="#">Pédiatre</a></li>
+						<li><a href="#">Ophtalmologue</a></li>
+						<li><a href="#">Sexologue</a></li>
+						<li><a href="#">Gynécologue</a></li>
+						<li><a href="#">Dermatologue</a></li>
+						<li><a href="#">Plus...</a></li>
+					</ul>
 				</div>
-			</section>
-		</main>
-
-
-		<footer class="page-footer purple">
-				<div class="container">
-					<div class="row">
-						<div class="col m2">
-							<h4 class="white-text">Doctoubib</h4>
-							<ul>
-								<li><a target="_blank" href="/doctors-section">Vous êtes praticien ?</a>
-								</li>
-								<li><a href="/concept">Le concept</a></li>
-								<li><a href="/about-us">À propos de nous</a></li>
-								<li><a href="/help">Contact</a></li>
-								<li><a href="/blog">Blog</a></li>
-							</ul>
-						</div>
-						<div class="col m2">
-							<h4 class="white-text">Spéciaité</h4>
-							<ul>
-								<li><a href="#">Cardiologue</a></li>
-								<li><a href="#">Dentiste</a></li>
-								<li><a href="#">Pédiatre</a></li>
-								<li><a href="#">Ophtalmologue</a></li>
-								<li><a href="#">Sexologue</a></li>
-								<li><a href="#">Gynécologue</a></li>
-								<li><a href="#">Dermatologue</a></li>
-								<li><a href="#">Plus...</a></li>
-							</ul>
-						</div>
-						<div class="col m2">
-							<h4 class="white-text">Ville</h4>
-							<ul>
-								<li><a href="#">Ariana</a></li>
-								<li><a href="#">Ben Arous</a></li>
-								<li><a href="#">Beja</a></li>
-								<li><a href="#">Bizerte</a></li>
-								<li><a href="#">Jendouba</a></li>
-								<li><a href="#">Sousse</a></li>
-								<li><a href="#">Sfax</a></li>
-								<li><a href="#">Tunis</a></li>
-								<li><a href="#">Plus...</a></li>
-							</ul>
-						</div>
-						<div class="col m2">
-							<h4 class="white-text">Recherche par</h4>
-							<ul>
-								<li><a href="#">Nom de docteur</a></li>
-								<li><a href="#">Spécialité</a></li>
-								<li><a href="#">Location</a></li>
-								<li><a href="#">Hopital</a></li>
-							</ul>
-						</div>
-						<div class="col m4">
-							<h4 class="white-text">Recherches fréquentes</h4>
-							<ul>
-								<li>
-									<a href="/Chirurgien-dentiste/tunis">Chirurgien-dentiste
-									Tunis</a>
-								</li>
-								<li>
-									<a href="/medecin-generaliste/tunis">Médecin
+				<div class="col m2">
+					<h4 class="white-text">Ville</h4>
+					<ul>
+						<li><a href="#">Ariana</a></li>
+						<li><a href="#">Ben Arous</a></li>
+						<li><a href="#">Beja</a></li>
+						<li><a href="#">Bizerte</a></li>
+						<li><a href="#">Jendouba</a></li>
+						<li><a href="#">Sousse</a></li>
+						<li><a href="#">Sfax</a></li>
+						<li><a href="#">Tunis</a></li>
+						<li><a href="#">Plus...</a></li>
+					</ul>
+				</div>
+				<div class="col m2">
+					<h4 class="white-text">Recherche par</h4>
+					<ul>
+						<li><a href="#">Nom de docteur</a></li>
+						<li><a href="#">Spécialité</a></li>
+						<li><a href="#">Location</a></li>
+						<li><a href="#">Hopital</a></li>
+					</ul>
+				</div>
+				<div class="col m4">
+					<h4 class="white-text">Recherches fréquentes</h4>
+					<ul>
+						<li>
+							<a href="/Chirurgien-dentiste/tunis">Chirurgien-dentiste
+								Tunis</a>
+							</li>
+							<li>
+								<a href="/medecin-generaliste/tunis">Médecin
 									généraliste Tunis</a>
 								</li>
 								<li>
 									<a href="/pediatre/tunis">Pédiatre
-									Tunis</a>
-								</li>
-								<li>
-									<a href="/gynecologue/tunis">Gynécologue
-									Tunis</a>
-								</li>
-								<li>
-									<a href="/gynecologue/sousse">Gynécologue
-									Sousse</a>
-								</li>
-								<li>
-									<a href="/gynecologue/ben-arous">Gynécologue
-									Ben Arous</a>
-								</li>
-								<li>
-									<a href="/ophtalmologue/tunis">Ophtalmologue
-									Tunis</a>
-								</li>
-								<li>
-									<a href="/ophtalmologue/ben-arous">Ophtalmologue
-									Ben Arous</a>
-								</li>
-								<li>
-									<a href="/orl/tunis">ORL
-									Tunis</a>
-								</li>
-								<li>
-									<a href="/dermatologue/tunis">Dermatologue
-									Tunis</a>
-								</li>
-								<li>
-									<a href="/chirurgien-urologue/tunis">Chirurgien
-									urologue Tunis</a>
-								</li>
-								<li>
-									<a href="/cardiologue/tunis">Cardiologue
-									Tunis</a>
-								</li>
-								<li>
-									<a href="/medecin-generaliste/sfax">Médecin
-									généraliste Sfax</a>
-								</li>
-							</ul>
-						</div>
-					</div>
+										Tunis</a>
+									</li>
+									<li>
+										<a href="/gynecologue/tunis">Gynécologue
+											Tunis</a>
+										</li>
+										<li>
+											<a href="/gynecologue/sousse">Gynécologue
+												Sousse</a>
+											</li>
+											<li>
+												<a href="/gynecologue/ben-arous">Gynécologue
+													Ben Arous</a>
+												</li>
+												<li>
+													<a href="/ophtalmologue/tunis">Ophtalmologue
+														Tunis</a>
+													</li>
+													<li>
+														<a href="/ophtalmologue/ben-arous">Ophtalmologue
+															Ben Arous</a>
+														</li>
+														<li>
+															<a href="/orl/tunis">ORL
+																Tunis</a>
+															</li>
+															<li>
+																<a href="/dermatologue/tunis">Dermatologue
+																	Tunis</a>
+																</li>
+																<li>
+																	<a href="/chirurgien-urologue/tunis">Chirurgien
+																		urologue Tunis</a>
+																	</li>
+																	<li>
+																		<a href="/cardiologue/tunis">Cardiologue
+																			Tunis</a>
+																		</li>
+																		<li>
+																			<a href="/medecin-generaliste/sfax">Médecin
+																				généraliste Sfax</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
 
-					<div class="row no-mb">
-						<div class="col m12 center social-network-links">
-							<a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur Facebook" href="https://www.facebook.com/Doctoubib-212765005820617">
-								<i class="fa fa-facebook"></i>
-							</a>
-							<a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur Twitter" href="https://twitter.com/DoctoubibSocial">
-								<i class="fa fa-twitter"></i>
-							</a>
-							<a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur LinkedIn" href="https://www.linkedin.com/company/doctoubib">
-								<i class="fa fa-linkedin"></i>
-							</a>
-							<a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur Google Plus" href="https://plus.google.com/108679259695174843129">
-								<i class="fa fa-google-plus"></i>
-							</a>						
-						</div>
-						<div class="white-text col m12 center">© 2018 Doctoubib. <a class="grey-text" href="/terms-of-use">Conditions générales d'utilisation</a></div>
-					</div>
+																<div class="row no-mb">
+																	<div class="col m12 center social-network-links">
+																		<a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur Facebook" href="https://www.facebook.com/Doctoubib-212765005820617">
+																			<i class="fa fa-facebook"></i>
+																		</a>
+																		<a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur Twitter" href="https://twitter.com/DoctoubibSocial">
+																			<i class="fa fa-twitter"></i>
+																		</a>
+																		<a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur LinkedIn" href="https://www.linkedin.com/company/doctoubib">
+																			<i class="fa fa-linkedin"></i>
+																		</a>
+																		<a class="btn-floating btn-large" target="_blank" title="Suivez-nous sur Google Plus" href="https://plus.google.com/108679259695174843129">
+																			<i class="fa fa-google-plus"></i>
+																		</a>						
+																	</div>
+																	<div class="white-text col m12 center">© 2018 Doctoubib. <a class="grey-text" href="/terms-of-use">Conditions générales d'utilisation</a></div>
+																</div>
 
-				</div>
-		</footer>
-
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-		<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-		<script src="./assets/js/jquery.sticky-kit.min.js"></script>
-		<script src="./assets/js/main.js"></script>
-		<script src="./assets/js/doctor.js"></script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOVdztjRK8JesMfjfa00YYyv5prUfGlBc&callback=initMap"></script>
-	</body>
+															</div>
+														</footer>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+	<script src="./assets/js/jquery.sticky-kit.min.js"></script>
+	<script src="./assets/js/main.js"></script>
+	<script src="./assets/js/doctor.js"></script>
+		<script type="text/jsx" src="./assets/js/react.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOVdztjRK8JesMfjfa00YYyv5prUfGlBc&callback=initMap"></script>
+</body>
 </html>

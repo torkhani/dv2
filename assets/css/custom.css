@@ -272,11 +272,26 @@ body {
 }
 
 .search-result {
-	background-color: #e7e7e7;
+	background-color: #f6f6f6;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.search-result .slot-network {
+    min-height: 63px;
+    line-height: 63px;
+    border-bottom: solid 1px #e1e1e4;
+    margin: 0 -0.75rem 8px;
+}
+
+.day-column {
+  line-height: 20px;
+  padding-top: 1px;
+  padding-bottom: 3px;
+  color: #00234B;
+  text-align: center;
 }
 
 .search-list {
-  margin: 0.5rem 0 1rem 0;
   overflow: hidden;
   position: relative;
   background: #f6f6f6;
