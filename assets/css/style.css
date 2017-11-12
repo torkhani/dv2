@@ -92,12 +92,27 @@ h6 {
 /*******************
   Utility Classes
 *******************/
+.inline-block {
+  display: inline-block;
+}
+.clearfix {
+  clear: both;
+}
+
+.neutral-grey {
+    background-color: #e7e7e7;
+}
+
 .grey {
   background-color: #eceff1 !important;
 }
 
 .grey-text {
   color: #eceff1 !important;
+}
+
+.cool-grey-text {
+    color: #878791;
 }
 
 .grey-light {
@@ -266,6 +281,13 @@ video.responsive-video {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header10{
+  font-family:sharp-sans-medium,Arial,
+  sans-serif;
+  font-size:15px;
+  line-height:24px
 }
 /*********************
   Media Query Classes
@@ -869,7 +891,7 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
 
 .input-field.inline input,
 .input-field.inline .select-dropdown {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .input-field.col label {
@@ -1069,6 +1091,7 @@ select {
   margin: auto 0;
   font-size: 10px;
   line-height: 10px;
+  z-index:1;
 }
 
 .select-wrapper + label {
@@ -1233,7 +1256,9 @@ Paginattion
   border-bottom: 1px solid #e1e1e4;
   border-right: 1px solid #e1e1e4;
 }
-
+.pagination li:first-child {
+   border-left: 1px solid #e1e1e4; 
+}
 .pagination li a {
   color: #00234b;
   display: inline-block;
@@ -1299,13 +1324,10 @@ Breadcrumb
 }
 
 .breadcrumb:before {
-  content: '\E5CC';
+  content: '\f054';
   color: #28d7fa;
-  vertical-align: top;
   display: inline-block;
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
+  font: normal normal normal 14px/1 FontAwesome;
   font-size: 16px;
   margin: 0 10px 0 8px;
   -webkit-font-smoothing: antialiased;

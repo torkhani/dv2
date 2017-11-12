@@ -36,4 +36,4 @@
 	  
 
 
-$("#sidebar, #search-header").stick_in_parent({recalc_every: 1});
+$(".search-map-wrapper, #search-header, .search-criteria").stick_in_parent({recalc_every: 1});

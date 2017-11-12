@@ -271,16 +271,69 @@ body {
 	padding: 0 0.70em !important;
 }
 
+
+.filters-item {
+    border-right: 1px solid rgba(67,95,113,0.2);
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.search-criteria input.select-dropdown {
+  background: transparent;
+  margin: 0;
+}
+
+
+.search-criteria .dropdown-toggle {
+    padding: 0 14px;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 50px;
+}
+
 .search-result {
 	background-color: #f6f6f6;
-  margin: 0.5rem 0 1rem 0;
+  overflow: hidden;
+}
+
+.search-result select.browser-default {
+  background: transparent;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  max-width: 115px;
+}
+
+.availabilities-days {
+  padding: 0 15px;
+  position: relative;
+}
+
+.availabilities-pagination {
+    position: absolute;
+    top: 5px;
+    cursor: pointer;
+}
+
+.availabilities-pagination.next{
+    right: 0;
+}
+.availabilities-pagination.previous{
+    left: 0;
 }
 
 .search-result .slot-network {
     min-height: 63px;
     line-height: 63px;
-    border-bottom: solid 1px #e1e1e4;
-    margin: 0 -0.75rem 8px;
+    margin: 0 0 8px;
 }
 
 .day-column {
@@ -291,7 +344,7 @@ body {
   text-align: center;
 }
 
-.search-list {
+.search-list, .link-section {
   overflow: hidden;
   position: relative;
   background: #f6f6f6;
@@ -301,7 +354,7 @@ body {
   background-color: #fff;
   line-height: 1.5rem;
   padding: 10px 10px;
-  margin: 0 8px 8px 8px;
+  margin: 0 0 8px 0;
   box-sizing: border-box;
   min-height: 200px;
 }
@@ -386,11 +439,7 @@ body {
 .search-map-wrapper {
 	width:100%;
 	position: relative;
-}
-
-.stuck-map {
-	position: fixed !important;
-	top: 80px;
+  padding: 0px !important;
 }
 
 #map {
@@ -401,6 +450,10 @@ body {
 	min-height: 600px;
 }
 
+.pagination {
+  padding: 30px 0 60px;
+}
+
 .link-name {
     border-bottom: 2px solid #00234b;
 	   color: #00234b;
@@ -409,7 +462,7 @@ body {
 }
 
 .link-section li > a {
-    color: #2bbfed;
+  color: #2bbfed;
 	margin-bottom: 10px;
 	line-height: 20px;
 	display: inline-block;
