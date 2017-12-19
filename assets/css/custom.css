@@ -250,6 +250,15 @@ body {
 	padding: 60px 0 80px;
 }
 
+
+
+.listPracticePanelContainer ul {
+    list-style-position: outside;
+    list-style-type: disc;
+    padding-bottom: 32px;
+    padding-left: 20px;
+}
+
 .search-form input {
     outline: 0;
     border: 1px;

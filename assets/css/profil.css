@@ -1,0 +1,233 @@
+.view__ProfilePageWrapper {
+    background-color: #FFFFFF;
+    color: #00234B;
+}
+
+.Header__HeaderDiv {
+   padding: 36px 30px;
+   background-color: #FFFFFF;
+}
+
+.Header__DoctorTitle {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: "sharp-sans-bold",Arial,sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 44px;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    padding: 6px 0;
+    margin-top: 0;
+}
+
+.Header__StarsDiv {
+    font-size: 22px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
+.Header__ClickableStars {
+    display: inline-block;
+    font-size: 1em;
+    height: 1em;
+    width: 1em;
+    font-size: 1em;
+    height: 1em;
+    width: 6.075em;
+}
+
+.Header__SpecialtiesDiv {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: "sharp-sans-semibold",Arial,sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
+
+
+.tabs {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 48px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    white-space: nowrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.tabs .tab {
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    border-bottom: 4px solid #00234B;
+    background-color: transparent;
+    color: #00234B;
+}
+
+
+.view__ContentContainer {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: "kievit-slab-book",Georgia,serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    padding-left: 60px;
+    padding-top: 14px;
+    padding-bottom: 0;
+    padding-right: 60px;
+}
+
+.ProfileTab__ProfileSection {
+    margin-top: 36px;
+    line-height: 28px;
+}
+
+.ProfileTab__HeaderText {
+    font: 24px Arial,sans-serif;
+    margin-bottom: 8px;
+}
+
+.InNetworkInsurancePreview__Item {
+    font: 18px/24px Georgia,serif;
+}
+
+.InNetworkInsurancePreview__Item:after {
+    content: ', ';
+}
+
+.InNetworkInsurancePreview__Item:last-child:after {
+    content: '...';
+}
+
+.view__TooltipIconWrapper {
+    display: inline-block;
+    font-size: 12px;
+    margin: -3px -6px 0 4px;
+}
+
+
+
+
+.BookingSection {
+    background-color: #F3F3F4;
+    width: 100%;
+    padding: 0 44px 52px;
+}
+
+
+.BookingSection__BookingSectionHeader {
+    font: 24px/24px Arial,sans-serif;
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 4px;
+    color: #00234B;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.BookingSection__UnderlineHeader {
+    color: #00234B;
+    background-color: #00234B;
+    border-color: #00234B;
+    height: 4px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.DropdownWrapper__Dropdown {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    height: 100%;
+    max-height: 56px;
+    opacity: 0;
+    outline: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% + 1px);
+}
+
+
+.DropdownWrapper__SelectGroup {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    max-width: 100%;
+    padding-top: 10px;
+}
+
+.DropdownWrapper__SelectedText{
+    box-sizing: content-box;
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    height: 26px;
+    overflow: hidden;
+    padding: 2px 12px 8px 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.DropdownWrapper__Arrow {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 19px;
+    margin-top: 10px;
+
+    display: inline-block;
+    font-size: 8px;
+    height: 1em;
+    width: 1em;
+    width: 1.575em;
+}
+
+.Tooltip__Wrapper {
+    cursor: pointer;
+    position: relative;
+}
+
+.base__Icon {
+    display: inline-block;
+    font-size: 1em;
+    height: 1em;
+    width: 1em;
+}

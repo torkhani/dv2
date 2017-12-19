@@ -1,131 +1,338 @@
 <!doctype HTML>
 <html lang="fr">
+
 <head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width" name="viewport">
-	<meta name="description" content="">
-	<title>Trouver un médecin</title>
-	<link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
-	<link type="text/css" rel="stylesheet" href="assets/css/grid.css"/>
-	<link type="text/css" rel="stylesheet" href="assets/css/normalize.css"/>
-	<link type="text/css" rel="stylesheet" href="assets/css/custom.css"/>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5BC3GFJ');</script>
-<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta content="width=device-width" name="viewport">
+    <meta name="description" content="">
+    <title>Trouver un médecin</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/grid.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/normalize.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/custom.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/profil.css"/>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5BC3GFJ');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
+
 <body>
-	<header class="yellow">
-		<nav class="navbar">
-			<div class="container">
-				<div class="main-navbar">
-					<a href="index.html">
-						<img src="./assets/img/logo.png" alt="Doctoubib">
-					</a>
-					<div class="right">
-						<a class="transparent btn btn-trans purple-text" href="/doctors-section">Vous êtes praticien ?</a>
-						<a class="transparent btn btn-trans purple-text">Mon compte</a>
-					</div>
-				</div>
-				<div class="show-on-mdeium hide-on-med-and-up">
-					<a href="/" class="center-block" rel="nofollow">
-						<img src="./assets/img/logo.png" alt="Doctoubib">
-					</a>
-					<ul id="mobile-menu" class="side-nav left">
-						<li>
-							<a class="subheader">Mon compte</a>
-						</li>
-						<li>
-							<a href="#!">First Link With Icon</a>
-						</li>
-						<li>
-							<a class="subheader">vous etes Médecin ?</a>
-						</li>
-						<li>
-							<a class="waves-effect" href="#!">Rejoignez nous</a>
-						</li>
-						<li>
-							<a class="subheader">A propos de nous</a>
-						</li>
-						<li>
-							<a class="waves-effect" href="#!">Concept</a>
-						</li>
-						<li>
-							<a class="waves-effect" href="#!">Contactez nous</a>
-						</li>
-					</ul>
-					<a href="#" data-activates="mobile-menu" class="button-collapse left">Menu</a>
-					<a href="#" data-activates="mobile-menu" class="button-collapse right">Login</a>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<main>
-		<section itemtype="http://schema.org/Physician">
-			<div class="white">
-				<div class="container">
-					<div class="row no-mb">
-						<div class="col m4">
-							<img src="./assets/img/avatar.jpg" alt="" class="circle">
-						</div>
-						<div class="col m8">
-							<h1 class="no-mb">Dr. Seriya Ben Hamda</h1>
-							<h2 class="no-mt">Cardiologue</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col m8">
-						<div class="row white">
-							<div class="col s12">
-								<p>Le Docteur Josette Malfait vous accueille dans son cabinet à Ivry-sur-Seine.
-									Le médecin généraliste reçoit les enfants et les adultes pour tous types de soins médicaux généraux (consultation, contrôle annuel, vaccination, bilan de santé). Il traite également les maladies infectieuses et assure le suivi des nourrissons (pesée, mesure, vaccination).
-								</p>
-							</div>
-						</div>
-						<div class="row white">
-							<div class="col m6">
-								<h3>Carte et informations d'accès</h3>
-								<p>15 Rue Ledru Rollin</p>
-							</div>
-							<div class="col m6">
-								<div id="map"></div>	
-							</div>
-						</div>
-					</div>
-					<div class="col m4">
-						
-					</div>
-				</div>	
-			</div>
-		</section>
+    <header class="yellow">
+        <nav class="navbar">
+            <div class="container">
+                <div class="main-navbar">
+                    <a href="index.html">
+                        <img src="./assets/img/logo.png" alt="Doctoubib">
+                    </a>
+                    <div class="right">
+                        <a class="transparent btn btn-trans purple-text" href="/doctors-section">Vous êtes praticien ?</a>
+                        <a class="transparent btn btn-trans purple-text">Mon compte</a>
+                    </div>
+                </div>
+                <div class="show-on-mdeium hide-on-med-and-up">
+                    <a href="/" class="center-block" rel="nofollow">
+                        <img src="./assets/img/logo.png" alt="Doctoubib">
+                    </a>
+                    <ul id="mobile-menu" class="side-nav left">
+                        <li>
+                            <a class="subheader">Mon compte</a>
+                        </li>
+                        <li>
+                            <a href="#!">First Link With Icon</a>
+                        </li>
+                        <li>
+                            <a class="subheader">vous etes Médecin ?</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect" href="#!">Rejoignez nous</a>
+                        </li>
+                        <li>
+                            <a class="subheader">A propos de nous</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect" href="#!">Concept</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect" href="#!">Contactez nous</a>
+                        </li>
+                    </ul>
+                    <a href="#" data-activates="mobile-menu" class="button-collapse left">Menu</a>
+                    <a href="#" data-activates="mobile-menu" class="button-collapse right">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="view__ProfilePageWrapper" itemtype="http://schema.org/Physician">
+            <div class="row" itemscope itemtype="http://schema.org/Physician">
+                <!--LEFT BLOCK -->
+                <div class="col m7">
+                    <div class="Header__HeaderDiv">
+                        <div class="Header__PictureRow">
+                            <div class="Header__PictureFrame">
+                                <div class="Header__PictureSpacer"></div>
 
-		<section class="white">
-			<div class="container">
-				<nav class="breadcrumbs">
-					<div class="nav-wrapper">
-						<div class="col s12">
-							<a href="#!" class="breadcrumb blue-lighten-text">Accueil</a>
-							<a href="#!" class="breadcrumb blue-lighten-text">Cardiologue</a>
-							<a href="#!" class="breadcrumb">Tunis</a>
-						</div>
-					</div>
-				</nav>
-			</div>
-		</section>
-	</main>
+                                <img class="Header__Picture" alt="Picture for Dr. Sharon Odell, MD" itemprop="photos" src="http://dsw5h1xg5uvx.cloudfront.net/0beddda8-7d01-4a90-ad74-076a75c18b9bcircle_large__v1__.png">
+                            </div>
+                            <a class="" data-action-name="Click Additional Picture Caption Link">
+                                <span>10 photos</span>
+                            </a>
+                        </div>
+                        <h1 class="Header__DoctorTitle">
+                        <span itemprop="name">Dr. Sharon Odell, MD</span></h1>
+                        <div class="Header__StarsDiv">
+                            <svg viewBox="0 0 243 40" class="Header__ClickableStars" data-rating="5" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                <path d="M32.2 40l-10.7-7.8L10.8 40l-3.7-2.7 4.1-12.6L.5 17l1.4-4.4h13.2L19.2 0h4.6l4.1 12.6h13.2l1.4 4.4-10.7 7.8 4.1 12.6-3.7 2.6zm50 0l-10.7-7.8L60.8 40l-3.7-2.7 4.1-12.6L50.5 17l1.4-4.4h13.2L69.2 0h4.6l4.1 12.6h13.2l1.4 4.4-10.7 7.8 4.1 12.6-3.7 2.6zm50 0l-10.7-7.8-10.7 7.8-3.7-2.7 4.1-12.6-10.7-7.7 1.4-4.4h13.2L119.2 0h4.6l4.1 12.6h13.2l1.4 4.4-10.7 7.8 4.1 12.6-3.7 2.6zm49.8 0l-10.7-7.8-10.7 7.8-3.7-2.7 4.1-12.6-10.7-7.7 1.4-4.4h13.2L169 0h4.6l4.1 12.6h13.2l1.4 4.4-10.7 7.8 4.1 12.6L182 40zm50.2 0l-10.7-7.8-10.7 7.8-3.7-2.7 4.1-12.6-10.7-7.7 1.4-4.4h13.2L219.2 0h4.6l4.1 12.6h13.2l1.4 4.4-10.7 7.8 4.1 12.6-3.7 2.6z" fill="#FF6473">
+                                </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="Header__SpecialtiesDiv">Internist, Primary Care Doctor</div>
+                    </div>
+                    <!-- Tabs -->
+                    <div>
+                      <ul class="tabs">
+                        <li class="tab col s6"><a class="active" href="#overview">Overview</a></li>
+                        <li class="tab col s6"><a href="#contact">Contacter</a></li>
+                      </ul>
+                      <div class="view__ContentContainer">
+                            <div id="test1" class="col s12">
+                                <section class="ProfileTab__ProfileSection">
+                                    <h3 class="ProfileTab__HeaderText"><span>Professional statement</span></h3>
+                                    <div class="CollapsibleText__Text"><span>
+                                        Dr. Odell earned her medical degree from Eastern Virginia Medical School in Norfolk, Va. She completed her residency at Medical College of Pennsylvania, now called Drexel University, in Philadelphia. She has been recognized by the National Committee for Quality Assurance's (NCQA) Bridges to Excellence program for her quality diabetes care and management.
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-	<script src="./assets/js/jquery.sticky-kit.min.js"></script>
-	<script src="./assets/js/main.js"></script>
-	<script src="./assets/js/doctor.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOVdztjRK8JesMfjfa00YYyv5prUfGlBc&callback=initMap"></script>
+                                        She is an internist and primary care doctor in Marietta, GA.</span>
+                                    </div>
+                                </section>
+
+                                <section class="ProfileTab__ProfileSection">
+                                    <h3 class="ProfileTab__HeaderText">
+                                    <span>Specialties</span></h3>
+                                    <ul>
+                                        <li class="ProfileTab__Item">Pediatrician</li>
+                                        <li class="ProfileTab__Item">Primary Care Doctor</li>
+                                        <li class="ProfileTab__Item">Internist</li>
+                                    </ul>
+                                </section>
+
+                                <section class="ProfileTab__ProfileSection">
+                                    <h3 class="ProfileTab__HeaderText"><span>In-network insurances</span></h3>
+                                    <div>
+                                        <ul class="InNetworkInsurancePreview__List">
+                                            <li class="InNetworkInsurancePreview__Item">AARP</li>
+                                            <li class="InNetworkInsurancePreview__Item">Aetna</li>
+                                            <li class="InNetworkInsurancePreview__Item">Alliant Health Plans</li>
+                                        </ul>
+                                        <a class="pd1ar-0-Link"><span>view more</span></a>
+                                    </div>
+                                </section>
+
+                                <section class="ProfileTab__ProfileSection">
+                                    <h3 class="ProfileTab__HeaderText"><span>Practice names</span></h3>
+                                    <ul>
+                                        <li class="ProfileTab__Item">
+                                            <a class="Link-pd1ar-0 iAZCqw" href="#">WellStar Medical Group Family Medicine - East Cobb</a>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section class="ProfileTab__ProfileSection">
+                                    <h3 class="ProfileTab__HeaderText">
+                                    <span>Hospital affiliations</span>
+                                    </h3>
+                                    <ul>
+                                        <li class="ProfileTab__Item" itemprop="hospitalAffiliation">WellStar Kennestone Hospital</li>
+                                    </ul>
+                                </section>
+
+                                <section class="ProfileTab__ProfileSection">
+                                    <h3 class="ProfileTab__HeaderText"><span>Board certifications</span></h3>
+                                    <ul>
+                                        <li class="ProfileTab__Item">American Board of Internal Medicine</li>
+                                        <li class="ProfileTab__Item">American Board of Pediatrics</li>
+                                    </ul>
+                                </section>
+                                <section class="ProfileTab__ProfileSection">
+                                    <h3 class="ProfileTab__HeaderText"><span>Education and training</span></h3>
+                                    <ul>
+                                        <li class="ProfileTab__Item">Medical School - University of Texas, Houston, Doctor of Medicine</li>
+                                        <li class="ProfileTab__Item">Texas A&amp;M University (Bachelor's)</li>
+                                        <li class="ProfileTab__Item">Vanderbilt University Medical Center, Residency in Medicine and Pediatrics</li>
+                                    </ul>
+                                </section>
+
+                                <section class="ProfileTab__ProfileSection">
+                                    <h3 class="ProfileTab__HeaderText"><span>Professional memberships</span></h3>
+                                    <ul>
+                                        <li class="ProfileTab__Item">American College of Physicians</li>
+                                        <li class="ProfileTab__Item">The American Academy of Pediatrics</li>
+                                    </ul>
+                                </section>
+
+                                <section class="ProfileTab__ProfileSection">
+                                    <h3 class="ProfileTab__HeaderText"><span>Provider's gender</span></h3>
+                                    <p>Male</p>
+                                </section>
+
+                                <section class="ProfileTab__ProfileSection">
+                                    <h3 class="ProfileTab__HeaderText"><span>Languages spoken</span>
+                                        <div class="view__TooltipIconWrapper">
+                                            <div class="Tooltip__Wrapper">
+                                                <div>
+                                                    <div class="view__TooltipTarget">
+                                                        <svg viewBox="0 0 13 13" class="base__Icon" alt="Languages spoken in the provider's office.">
+                                                            <path d="M6.5 0A6.5 6.5 0 1 0 13 6.5 6.507 6.507 0 0 0 6.5 0zm0 11.96a5.46 5.46 0 1 1 5.46-5.46 5.466 5.466 0 0 1-5.46 5.46z" fill="#878791"></path>
+                                                            <path d="M5.72 3.12h1.56v1.56H5.72zm0 2.6h1.56v4.42H5.72z" fill="#878791"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </h3>
+                                    <ul>
+                                        <li class="ProfileTab__Item">English</li>
+                                    </ul>
+                                </section>
+
+
+                                <div class="ProfileTab__ProfileSection">
+                                    <h1 class="view__Header"><span>Office locations</span></h1>
+                                    <div>
+                                        <div class="ProfileLocations__LocationContainer">
+                                            <div>
+                                                <div class="LocationCardView__StyledLocationCard" itemprop="location" itemscope="" itemtype="http://schema.org/Place">
+                                                    <div itemprop="geo" itemscope="" itemtype="http://schema.org/GeoCoordinates">
+                                                        <meta content="33.9790869" itemprop="latitude">
+                                                        <meta content="-84.4446657" itemprop="longitude">
+                                                        <div class="LocationCardView__MapContainer">
+                                                            <div class="LocationCardView__MobileMap">
+                                                                <div class="GoogleStaticMap__StyledWrapper">
+                                                                </div>
+                                                            </div>
+                                                            <div class="LocationCardView__DesktopMap">
+                                                                <div class="GoogleStaticMap__StyledWrapper">
+                                                                    <div style="height:120px;width:120px">
+                                                                        <img alt="" width="120" height="120" src="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="LocationCardView__LocationCardInfo" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                                                            <p class="LocationCardView__LocationName">WellStar Medical Group Family Medicine - East Cobb</p>
+                                                            <p itemprop="streetAddress">3747 Roswell Road, uite 216</p>
+                                                            <p>
+                                                                <span itemprop="addressLocality">Marietta</span>, 
+                                                                <span itemprop="addressRegion">GA</span> 
+                                                                <span itemprop="postalCode">30062</span>
+                                                            </p>
+                                                            <meta content="TN" itemprop="addressCountry">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="test2" class="col s12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!--RIGHT BLOCK -->
+
+                <div class="col m5 BookingSection">
+                    <div class="BookingSection__BookingSectionContainer">
+                        <div class="BookingSection__BookingSectionHeader">
+                        <span>Book an appointment</span>
+                        <hr class="BookingSection__UnderlineHeader"></div>
+                    </div>
+
+                    <div>
+                        
+                        <div class="BookingSubSection__BookingSubSectionDiv">
+                            <div class="BookingSubSection__BookingSubSectionLabel">
+                                <span>Reason for your visit</span>
+                            </div>
+                            <div>
+                                <div class="DropdownWrapper__FauxSelect">
+                                    <select class="DropdownWrapper__Dropdown">
+                                        <optgroup label="Popular Visit Reasons">
+                                            <option value="130">Annual Pap Smear / GYN Exam</option>
+                                            <option value="76">Annual Physical</option>
+                                            <option value="84">Dermatology Consultation</option>
+                                            <option value="83">General Consultation</option>
+                                            <option selected="" value="75">Illness</option></optgroup>
+                                            <optgroup label="All Visit Reasons">
+                                            <option value="143">12 Month Well-Baby Checkup</option>
+                                            <option value="138">3-7 Day Well-Baby Checkup</option>
+                                            <option value="141">4 Month Well-Baby Checkup</option>
+                                            <option value="1066">Abscess</option>
+                                            <option value="86">Acne</option><option value="148">Annual Pediatric Checkup</option>
+                                            <option value="190">Arthritis</option><option value="210">Asthma</option>
+                                        </optgroup>
+                                    </select>
+
+                                    <div class="DropdownWrapper__SelectGroup DropdownWrapper__BaseSelectGroup">
+                                        <div class="DropdownWrapper__SelectedGroup">
+                                            <span class="DropdownWrapper__SelectedText">Illness</span>
+                                            <svg viewBox="0 0 63 40" class="DropdownWrapper__Arrow">
+                                                <polygon fill="currentColor" points="31.5,40 0.1,8.6 8.7,0 31.5,22.8 54.3,0 62.9,8.6"></polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="BookingSubSection__BookingSubSectionLabelOnlyDesktop-vfyh1m-1 cTXWec"><span>Office location</span></div>
+
+                    </div>
+                </div> <!--Appointment-->
+            </div><!--row-->
+        </div><!-- page container-->
+
+        <section class="white">
+            <div class="container">
+                <nav class="breadcrumbs">
+                    <div class="nav-wrapper">
+                        <div class="col s12">
+                            <a href="#!" class="breadcrumb blue-lighten-text">Accueil</a>
+                            <a href="#!" class="breadcrumb blue-lighten-text">Cardiologue</a>
+                            <a href="#!" class="breadcrumb">Tunis</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script src="./assets/js/jquery.sticky-kit.min.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/doctor.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOVdztjRK8JesMfjfa00YYyv5prUfGlBc&callback=initMap"></script>
 </body>
 </html>
